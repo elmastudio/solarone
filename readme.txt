@@ -58,8 +58,11 @@ Source: (https://github.com/SorkinType/SplineSans)
 = 1.0.1 =
 * Released: June 20, 2022
 
-* Enhance: Pattern collection.
-* Bugfix: Footer patterns.
+* Enhance: Add Customizer to give access to custom CSS and Favicon settings.
+* Enhance: Disable duotone palette since it is not needed in the theme.
+* Bugfix: Footer patterns updated.
+* Bugfix: Set default font size in theme.json.
+* Bugfix: Navigation block gap.
 
 = 1.0 =
 * Released: June 19, 2022
