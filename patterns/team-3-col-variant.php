@@ -1,0 +1,115 @@
+<?php
+/**
+ * Title: Three-column team with heading (variant)
+ * Slug: solarone/team-3-col-variant
+ * Categories: about
+ */
+?>
+
+<!-- wp:group {"align":"full","backgroundColor":"font-tertiary","paddingTop":18} -->
+<div class="wp-block-group alignfull has-font-tertiary-background-color has-background pt__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
+<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":11,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"variant-tertiary","fontSize":"text-xl"} -->
+<p class="has-text-align-center has-variant-tertiary-color has-text-color has-text-xl-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html__('Meet the team', 'soloarone'); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":2,"textColor":"variant-font-primary","fontSize":"text-4-xl","paddingTop":4} -->
+<h2 class="has-text-align-center has-variant-font-primary-color has-text-color has-text-4-xl-font-size pt__4"><?php echo esc_html__('We are a team of creatives and experts who love their work', 'soloarone'); ?></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","textColor":"variant-font-secondary","paddingTop":8,"paddingBottom":13} -->
+<p class="has-text-align-center has-variant-font-secondary-color has-text-color pt__8 pb__13"><?php echo esc_html__('Get to know our passionate team of digital marketing experts.', 'soloarone'); ?></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:ainoblocks/grid-item --></div>
+
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none","paddingBottom":0} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
+<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"id":22375,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://ainodev.local/wp-content/uploads/2022/06/team-01.png" alt="" class="wp-image-22375"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-l","paddingTop":7} -->
+<h3 class="has-variant-font-primary-color has-text-color has-text-l-font-size pt__7">Amila Williams</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":5} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__5">Senior App Developer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:ainoblocks/grid-item -->
+
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":5,"gridColumnEndDesktop":9,"gridColumnStartTablet":5,"gridColumnEndTablet":9,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__9 col_start_t__5 col_end_t__9 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"id":22375,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://ainodev.local/wp-content/uploads/2022/06/team-01.png" alt="" class="wp-image-22375"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-l","paddingTop":7} -->
+<h3 class="has-variant-font-primary-color has-text-color has-text-l-font-size pt__7">Amila Williams</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":5} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__5">Senior App Developer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:ainoblocks/grid-item -->
+
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":9,"gridColumnEndDesktop":13,"gridColumnStartTablet":9,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__9 col_end_d__13 col_start_t__9 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"id":22375,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://ainodev.local/wp-content/uploads/2022/06/team-01.png" alt="" class="wp-image-22375"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-l","paddingTop":7} -->
+<h3 class="has-variant-font-primary-color has-text-color has-text-l-font-size pt__7">Amila Williams</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":5} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__5">Senior App Developer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:ainoblocks/grid-item -->
+
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"id":22375,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://ainodev.local/wp-content/uploads/2022/06/team-01.png" alt="" class="wp-image-22375"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-l","paddingTop":7} -->
+<h3 class="has-variant-font-primary-color has-text-color has-text-l-font-size pt__7">Amila Williams</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":5} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__5">Senior App Developer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:ainoblocks/grid-item -->
+
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":5,"gridColumnEndDesktop":9,"gridColumnStartTablet":5,"gridColumnEndTablet":9,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__9 col_start_t__5 col_end_t__9 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"id":22375,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://ainodev.local/wp-content/uploads/2022/06/team-01.png" alt="" class="wp-image-22375"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-l","paddingTop":7} -->
+<h3 class="has-variant-font-primary-color has-text-color has-text-l-font-size pt__7">Amila Williams</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":5} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__5">Senior App Developer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:ainoblocks/grid-item -->
+
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":9,"gridColumnEndDesktop":13,"gridColumnStartTablet":9,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__9 col_end_d__13 col_start_t__9 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"id":22375,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="http://ainodev.local/wp-content/uploads/2022/06/team-01.png" alt="" class="wp-image-22375"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"textColor":"variant-font-primary","fontSize":"text-l","paddingTop":7} -->
+<h3 class="has-variant-font-primary-color has-text-color has-text-l-font-size pt__7">Amila Williams</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":5} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__5">Senior App Developer</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-container --></div>
+<!-- /wp:ainoblocks/grid-item -->
+
+</div>
+<!-- /wp:ainoblocks/grid-container --></div>
+<!-- /wp:group -->
