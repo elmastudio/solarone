@@ -59,7 +59,7 @@ Source: (https://github.com/SorkinType/SplineSans)
 * Released: June 20, 2022
 
 * Enhance: Pattern collection.
-
+* Bugfix: Footer patterns.
 
 = 1.0 =
 * Released: June 19, 2022

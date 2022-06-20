@@ -25,19 +25,19 @@
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":6,"gridColumnEndDesktop":8,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":7,"justifyItem":"stretch","marginBottomTablet":0,"marginBottomMobile":10} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__6 col_end_d__8 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__7 align-self__start justify-self__stretch no-stacking mb_t__0 mb_m__10"><!-- wp:group {"paddingTop":0,"paddingBottom":0} -->
 <div class="wp-block-group"><!-- wp:heading {"level":4,"textColor":"variant-font-primary","fontSize":"text-xs","paddingBottom":8} -->
-<h4 class="has-variant-font-primary-color has-text-color has-text-xs-font-size pb__8"><strong>Company</strong></h4>
+<h4 class="has-variant-font-primary-color has-text-color has-text-xs-font-size pb__8"><strong><?php echo esc_html__('Company', 'soloarone'); ?></strong></h4>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-s","paddingTop":0,"paddingBottom":8} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-s-font-size pb__8"><a href="#">About us</a></p>
+<p class="has-variant-font-secondary-color has-text-color has-text-s-font-size pb__8"><a href="#"><?php echo esc_html__('About us', 'soloarone'); ?></a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-s","paddingBottom":8} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-s-font-size pb__8">Our Team</p>
+<p class="has-variant-font-secondary-color has-text-color has-text-s-font-size pb__8"><?php echo esc_html__('Our Team', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-s"} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-s-font-size">Services</p>
+<p class="has-variant-font-secondary-color has-text-color has-text-s-font-size"><?php echo esc_html__('Services', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:ainoblocks/grid-item -->
@@ -100,7 +100,7 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__9 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__stretch no-stacking mt_d__10 pt__8"><!-- wp:ainoblocks/flexbox {"flexDirectionMobile":"direction__col__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__col__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__stretch__d align-items__stretch__t align-itms__stretch__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item -->
 <div class="wp-block-ainoblocks-flex-item auto"><!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":0,"paddingBottom":5,"paddingRight":8} -->
-<?php echo esc_html__('©2022', 'soloarone'); ?><strong><?php echo esc_html__(' Your name here', 'soloarone'); ?></strong><?php echo esc_html__('. Built with by ', 'soloarone'); ?><a rel="nofollow" href="https://ainoblocks.io/"><?php echo esc_html__('AinoBlocks', 'soloarone'); ?></a>.</p>
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pb__5 pr__8"><?php echo esc_html__('©2022', 'soloarone'); ?><strong><?php echo esc_html__(' Your name here', 'soloarone'); ?></strong>.<?php echo esc_html__(' Built with by ', 'soloarone'); ?><a rel="nofollow" href="https://ainoblocks.io/"><?php echo esc_html__('AinoBlocks', 'soloarone'); ?></a>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item -->
 

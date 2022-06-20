@@ -17,7 +17,7 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"alignSelfDesktop":"align__auto__d"} -->
-<div class="wp-block-ainoblocks-flex-item align__auto__d auto"><!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"text-l"} /--></div>
+<div class="wp-block-ainoblocks-flex-item align__auto__d auto"><!-- wp:site-title {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"font-primary","fontSize":"text-l"} /--></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
 <!-- /wp:ainoblocks/grid-item -->
@@ -28,16 +28,16 @@
 <h4 class="has-font-primary-color has-text-color has-text-xs-font-size pb__8"><strong><?php echo esc_html__('Company', 'soloarone'); ?></strong></h4>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"text-s","paddingTop":0,"paddingBottom":8} -->
-<p class="has-text-s-font-size pb__8"><a href="#"><?php echo esc_html__('About us', 'soloarone'); ?></a></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s","paddingTop":0,"paddingBottom":8} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size pb__8"><a href="#"><?php echo esc_html__('About us', 'soloarone'); ?></a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"text-s","paddingBottom":8} -->
-<p class="has-text-s-font-size pb__8"><?php echo esc_html__('Our Team', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s","paddingBottom":8} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size pb__8"><?php echo esc_html__('Our Team', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"text-s"} -->
-<p class="has-text-s-font-size"><?php echo esc_html__('Services', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s"} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size"><?php echo esc_html__('Services', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:ainoblocks/grid-item -->
@@ -48,16 +48,16 @@
 <h4 class="has-font-primary-color has-text-color has-text-xs-font-size pb__8"><strong><?php echo esc_html__('Resources', 'soloarone'); ?></strong></h4>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"text-s","paddingTop":0,"paddingBottom":8} -->
-<p class="has-text-s-font-size pb__8"><a href="#"><?php echo esc_html__('App', 'soloarone'); ?></a></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s","paddingTop":0,"paddingBottom":8} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size pb__8"><a href="#"><?php echo esc_html__('App', 'soloarone'); ?></a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"text-s","paddingTop":0,"paddingBottom":8} -->
-<p class="has-text-s-font-size pb__8"><a href="#"><?php echo esc_html__('Websites', 'soloarone'); ?></a></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s","paddingTop":0,"paddingBottom":8} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size pb__8"><a href="#"><?php echo esc_html__('Websites', 'soloarone'); ?></a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"text-s","paddingTop":0,"paddingBottom":3} -->
-<p class="has-text-s-font-size pb__3"><a href="#"><?php echo esc_html__('Documentation', 'soloarone'); ?></a></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s","paddingTop":0,"paddingBottom":3} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size pb__3"><a href="#"><?php echo esc_html__('Documentation', 'soloarone'); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:ainoblocks/grid-item -->
@@ -68,16 +68,16 @@
 <h4 class="has-font-primary-color has-text-color has-text-xs-font-size pb__8"><strong><?php echo esc_html__('Contact', 'soloarone'); ?></strong></h4>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"fontSize":"text-s","paddingTop":0,"paddingBottom":7} -->
-<p class="has-text-s-font-size pb__7"><?php echo esc_html__('Talk to us', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s","paddingTop":0,"paddingBottom":7} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size pb__7"><?php echo esc_html__('Talk to us', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"text-s","paddingBottom":8} -->
-<p class="has-text-s-font-size pb__8"><?php echo esc_html__('Media', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s","paddingBottom":8} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size pb__8"><?php echo esc_html__('Media', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"fontSize":"text-s"} -->
-<p class="has-text-s-font-size"><?php echo esc_html__('Forms', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-s"} -->
+<p class="has-font-secondary-color has-text-color has-text-s-font-size"><?php echo esc_html__('Forms', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:ainoblocks/grid-item -->
