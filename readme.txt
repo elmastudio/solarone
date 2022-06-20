@@ -3,7 +3,7 @@ Contributors: elmastudio
 Requires at least: 5.9
 Tested up to: WordPress 6.0
 Requires PHP: 7.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,8 +55,16 @@ Source: (https://github.com/SorkinType/SplineSans)
 
 == Changelog ==
 
-= 1.0.0=
+= 1.0.1 =
+* Released: June 20, 2022
 
-Release date: 19/06/2022
+* Enhance: Add Customizer to give access to custom CSS and Favicon settings.
+* Enhance: Disable duotone palette since it is not needed in the theme.
+* Bugfix: Footer patterns updated.
+* Bugfix: Set default font size in theme.json.
+* Bugfix: Navigation block gap.
+
+= 1.0 =
+* Released: June 19, 2022
 
 * New: Initial Release
