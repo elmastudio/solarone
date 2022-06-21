@@ -223,38 +223,6 @@
                     ]
 				},
 				{
-					"fontFamily": "\"Inter\", sans-serif",
-					"slug": "inter",
-					"name": "Inter",
-					"fontFace": [
-                        {
-                            "fontFamily": "Inter",
-                            "fontWeight": "200 900",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [
-								"file:./assets/fonts/Inter.woff2"
-                            ]
-                        }
-                    ]
-				},
-				{
-					"fontFamily": "\"Spline Sans\", sans-serif",
-					"slug": "splinesans",
-					"name": "Spline Sans",
-					"fontFace": [
-                        {
-                            "fontFamily": "Spline Sans",
-                            "fontWeight": "300 700",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [
-								"file:./assets/fonts/SplineSans.woff2"
-                            ]
-                        }
-                    ]
-				},
-				{
 					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
 					"slug": "system",
 					"name": "System"
@@ -383,6 +351,7 @@
 		"elements": {
 			"h1": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-xxxl)"
 				},
 				"color": {
@@ -391,6 +360,7 @@
 			},
 			"h2": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-xxl)"
 				},
 				"color": {
@@ -399,6 +369,7 @@
 			},
 			"h3": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-xl)"
 				},
 				"color": {
@@ -407,6 +378,7 @@
 			},
 			"h4": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-l)"
 				},
 				"color": {
@@ -415,6 +387,7 @@
 			},
 			"h5": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-m)"
 				},
 				"color": {
@@ -423,6 +396,7 @@
 			},
 			"h6": {
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-s)"
 				},
 				"color": {
