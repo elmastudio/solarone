@@ -58,6 +58,7 @@ Source: (https://github.com/SorkinType/SplineSans)
 
 * New: Style variations "Inter" and SplineSans". You can choose them via Styles/Browse Styles to change the font family.
 * Enhance: Single post templates post meta description.
+* Enhance: Team Variant pattern.
 
 = 1.0.1 =
 * Released: June 20, 2022
