@@ -34,8 +34,6 @@ GNU General Public License for more details.
 
 SolarOne WordPress theme bundles the following third-party resources:
 
-* normalize.css, Copyright (c) Nicolas Gallagher and Jonathan Neal, MIT license, https://necolas.github.io/normalize.css/
-* Screenshot image #1, (c) Elmastudio Ltd., CC0 1.0 Universal (CC0 1.0) license
 * TGM-Plugin-Activation, (c) Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
 Epilogue Font
@@ -54,6 +52,13 @@ License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
 Source: (https://github.com/SorkinType/SplineSans)
 
 == Changelog ==
+
+= 1.1.0 =
+* Released: June 21, 2022
+
+* New: Style variations "Inter" and SplineSans". You can choose them via Styles/Browse Styles to change the font family.
+* Enhance: Single post templates post meta description.
+* Enhance: Team Variant pattern.
 
 = 1.0.1 =
 * Released: June 20, 2022

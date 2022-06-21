@@ -1,0 +1,75 @@
+{
+	"version": 2,
+	"title": "SplineSans",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Spline Sans\", sans-serif",
+					"slug": "splinesans",
+					"name": "Spline Sans",
+					"fontFace": [
+                        {
+                            "fontFamily": "Spline Sans",
+                            "fontWeight": "300 700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+								"file:./assets/fonts/SplineSans.woff2"
+                            ]
+                        }
+                    ]
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--splinesans)"
+		},
+		"blocks": {
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			},
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--splinesans)"
+				}
+			}
+		}
+	}
+}
