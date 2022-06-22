@@ -3,7 +3,7 @@ Contributors: elmastudio
 Requires at least: 5.9
 Tested up to: WordPress 6.0
 Requires PHP: 7.0
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,10 @@ License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
 Source: (https://github.com/SorkinType/SplineSans)
 
 == Changelog ==
+
+= 1.3.0 =
+* Released: June 23, 2022
+
 
 = 1.2.0 =
 * Released: June 22, 2022
