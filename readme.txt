@@ -54,7 +54,15 @@ Source: (https://github.com/SorkinType/SplineSans)
 == Changelog ==
 
 = 1.2.0 =
-* Released: June , 2022
+* Released: June 23, 2022
+
+* New: Team member pattern (default).
+* New: Three-column icon images with text (default).
+* Enhance: Brand patterns.
+* Enhance: Team member pattern.
+* Enhance: About page pattern.
+* Bugfix: Header pattern.
+
 
 = 1.1.0 =
 * Released: June 21, 2022
