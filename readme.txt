@@ -54,7 +54,7 @@ Source: (https://github.com/SorkinType/SplineSans)
 == Changelog ==
 
 = 1.2.0 =
-* Released: June 23, 2022
+* Released: June 22, 2022
 
 * New: Team member pattern (default).
 * New: Three-column icon images with text (default).
