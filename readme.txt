@@ -56,6 +56,10 @@ Source: (https://github.com/SorkinType/SplineSans)
 = 1.3.0 =
 * Released: June 23, 2022
 
+* New: Lading page pattern.
+* New: Featured video pattern (variant).
+* Bugfix: Patterns.
+
 
 = 1.2.0 =
 * Released: June 22, 2022

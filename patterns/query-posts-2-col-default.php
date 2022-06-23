@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Two-column featured posts (default)
- * Slug: solarone/featured-posts2-col-default
+ * Title: Two-column posts with heading (default)
+ * Slug: solarone/query-posts-2-col-default
  * Categories: query
  */
 ?>
@@ -25,7 +25,7 @@
 
 <!-- wp:post-terms {"term":"category","textColor":"font-secondary","fontSize":"text-xs"} /-->
 
-<!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1"}},"textColor":"font-primary","fontSize":"text-xxl","fontFamily":"libre-franklin"} /-->
+<!-- wp:post-title {"level":3,"isLink":true,"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.1"}},"textColor":"font-primary","fontSize":"text-xxl"} /-->
 
 <!-- wp:post-excerpt {"showMoreOnNewLine":false,"textColor":"font-secondary","fontSize":"text-xs"} /-->
 <!-- /wp:post-template --></section>
