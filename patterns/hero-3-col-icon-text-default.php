@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Three-column icon image and text (default)
- * Slug: solarone/3-col-icon-text-default
+ * Slug: solarone/hero-3-col-icon-text-default
  * Categories: hero
  */
 ?>
