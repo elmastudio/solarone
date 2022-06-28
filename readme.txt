@@ -57,6 +57,7 @@ Source: (https://github.com/SorkinType/SplineSans)
 * Released: June , 2022
 
 * New: Pricing patterns.
+* Enhance: Delete Customizer registration, since the Customizer is not needed in the theme.
 
 = 1.3.0 =
 * Released: June 23, 2022

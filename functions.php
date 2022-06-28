@@ -98,15 +98,6 @@ function solarone_register_pattern_categories() {
 add_action( 'init', 'solarone_register_pattern_categories' );
 
 /**
- * Restores the Customizer.
- */
-function solarone_restore_customizer() {
-	// There's no need to return anything.
-	// The empty callback will do the trick.
-}
-add_action( 'customize_register', 'soloarone_restore_customizer' );
-
-/**
  * Register block styles.
  *
  * @since SolarOne 1.0.0
