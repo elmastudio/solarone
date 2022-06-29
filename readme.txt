@@ -58,6 +58,7 @@ Source: (https://github.com/SorkinType/SplineSans)
 
 * New: Pricing patterns.
 * Enhance: Delete Customizer registration, since the Customizer is not needed in the theme.
+* Bugfix: Outer margins in Footer patterns.
 
 = 1.3.0 =
 * Released: June 23, 2022
