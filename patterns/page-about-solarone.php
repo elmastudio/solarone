@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: About SolarOne
+ * Title: About
  * Slug: solarone/page-about-solarone
  * Categories: page
  */
