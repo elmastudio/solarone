@@ -10,7 +10,7 @@
 <!-- wp:group {"backgroundColor":"background-primary","className":"site-footer"} -->
 <div class="wp-block-group site-footer has-background-primary-background-color has-background"><!-- wp:group {"className":"footer-content content-gap","paddingTop":13,"paddingBottom":12} -->
 <div class="wp-block-group footer-content content-gap pt__13 pb__12"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingBottom":0} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomDesktop":0,"marginBottomTablet":10,"marginBottomMobile":8} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginBottomDesktop":0,"marginBottomTablet":10,"marginBottomMobile":8} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__4 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mb_d__0 mb_t__10 mb_m__8"><!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__center__t align-items__center__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item {"flexShrink":true,"alignSelfDesktop":"align__auto__d","paddingRight":3} -->
 <div class="wp-block-ainoblocks-flex-item align__auto__d auto pr__3" style="flex-shrink:0"><!-- wp:site-logo {"width":40} /--></div>
@@ -116,7 +116,7 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

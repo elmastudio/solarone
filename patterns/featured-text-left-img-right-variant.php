@@ -8,7 +8,7 @@
 
 <!-- wp:group {"align":"full","backgroundColor":"variant-background-secondary","paddingTop":18} -->
 <div class="wp-block-group alignfull has-variant-background-secondary-background-color has-background pt__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center"} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"variant-tertiary","fontSize":"text-xxs"} -->
 <p class="has-variant-tertiary-color has-text-color has-text-xxs-font-size" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Enhance Idea', 'soloarone'); ?></p>
@@ -39,6 +39,6 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__12 col_start_t__7 col_end_t__13 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8"><!-- wp:image {"id":22291,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
 <figure class="wp-block-image size-full is-style-default"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/solarone-featured-01.png" alt=""/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->

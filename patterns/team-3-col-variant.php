@@ -2,7 +2,7 @@
 /**
  * Title: Three-column team with heading (variant)
  * Slug: solarone/team-3-col-variant
- * Categories: about
+ * Categories: teams
  */
 ?>
 

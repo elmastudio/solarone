@@ -8,7 +8,7 @@
 
 <!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingBottom":18} -->
 <div class="wp-block-group alignfull has-background-primary-background-color has-background pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":11,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","paddingBottom":11} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":11,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","paddingBottom":11} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking pb__11"><!-- wp:heading {"textColor":"font-primary","textAlign":"center","fontSize":"text-l"} -->
 <h2 class="has-text-align-center has-font-primary-color has-text-color has-text-l-font-size"><?php echo esc_html__('We work with the following partners', 'soloarone'); ?></h2>
 <!-- /wp:heading --></div>
@@ -72,6 +72,6 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__10 col_end_d__12 col_start_t__10 col_end_t__12 col_start_m__7 col_end_m__13 align-self__start justify-self__stretch no-stacking pt__8"><!-- wp:image {"id":22277,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/brand-05-default.png" alt=""/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->
