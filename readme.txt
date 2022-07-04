@@ -54,10 +54,13 @@ Source: (https://github.com/SorkinType/SplineSans)
 == Changelog ==
 
 = 1.4.0 =
-* Released: June , 2022
+* Released: July 4, 2022
 
-* New: Pricing patterns.
+* New: One Pricing pattern, Pricing pattern category and Pricing page pattern.
+* New: Two FAQ patterns and FAQs pattern category.
+* New: Two one-column Testimonial patterns.
 * Enhance: Delete Customizer registration, since the Customizer is not needed in the theme.
+* Enhance: Update all patterns with Grid block update.
 * Bugfix: Outer margins in Footer patterns.
 
 = 1.3.0 =
