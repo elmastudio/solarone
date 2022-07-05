@@ -57,6 +57,7 @@ Source: (https://github.com/SorkinType/SplineSans)
 * Released: July 4, 2022
 
 * Enhance: Header pattern.
+* Enhance: Navigation block spacing increased to 2rem.
 
 = 1.4.0 =
 * Released: July 4, 2022
