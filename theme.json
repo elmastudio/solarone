@@ -345,6 +345,13 @@
 						}
 					]
 				}
+			},
+			"core/group": {
+				"spacing": {
+					"margin": false,
+					"padding": false,
+					"blockGap": false
+				}
 			}
 		}
 	},
