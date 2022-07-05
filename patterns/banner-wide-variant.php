@@ -8,7 +8,7 @@
 
 <!-- wp:group {"align":"full","gradient":"gradient-secondary","paddingTop":18,"paddingBottom":18} -->
 <div class="wp-block-group alignfull has-gradient-secondary-gradient-background has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch"} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderRadius":"l","paddingTop":13,"paddingBottom":13,"paddingLeft":13,"paddingRight":13} -->
 <div class="wp-block-ainoblocks-card shadow-none pt__13 pb__13 pl__13 pr__13 has-background-primary-background-color has-background br-all__l"><!-- wp:ainoblocks/flexbox {"flexDirectionTablet":"direction__col__t","flexDirectionMobile":"direction__col__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__col__t direction__col__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__stretch__d align-items__stretch__t align-itms__stretch__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item -->
@@ -31,6 +31,6 @@
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
 <!-- /wp:ainoblocks/card --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->

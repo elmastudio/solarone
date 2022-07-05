@@ -74,15 +74,17 @@ add_action( 'wp_enqueue_scripts', 'solarone_styles' );
 function solarone_register_pattern_categories() {
 
 	$block_pattern_categories = array(
-		'hero'         => array( 'label' => __( 'Hero' ) ),
-		'featured'     => array( 'label' => __( 'Featured' ) ),
-		'about'        => array( 'label' => __( 'About' ) ),
+		'hero'         => array( 'label' => __( 'Heroes' ) ),
+		'featured'     => array( 'label' => __( 'Features' ) ),
+		'teams'         => array( 'label' => __( 'Teams' ) ),
 		'testimonials' => array( 'label' => __( 'Testimonials' ) ),
-		'contact'      => array( 'label' => __( 'Contact' ) ),
-		'query'        => array( 'label' => __( 'Query' ) ),
-		'banner'       => array( 'label' => __( 'Banner' ) ),
-		'text'         => array( 'label' => __( 'Text' ) ),
-		'newsletter'   => array( 'label' => __( 'Newsletter' ) ),
+		'faqs'         => array( 'label' => __( 'FAQs' ) ),
+		'pricing'      => array( 'label' => __( 'Pricing' ) ),
+		'contact'      => array( 'label' => __( 'Contacts' ) ),
+		'query'        => array( 'label' => __( 'Queries' ) ),
+		'banner'       => array( 'label' => __( 'Banners' ) ),
+		'text'         => array( 'label' => __( 'Texts' ) ),
+		'newsletter'   => array( 'label' => __( 'Newsletters' ) ),
 		'header'       => array( 'label' => __( 'Headers' ) ),
 		'footer'       => array( 'label' => __( 'Footers' ) ),
 		'page'         => array( 'label' => __( 'Pages' ) ),
@@ -96,15 +98,6 @@ function solarone_register_pattern_categories() {
 }
 
 add_action( 'init', 'solarone_register_pattern_categories' );
-
-/**
- * Restores the Customizer.
- */
-function solarone_restore_customizer() {
-	// There's no need to return anything.
-	// The empty callback will do the trick.
-}
-add_action( 'customize_register', 'soloarone_restore_customizer' );
 
 /**
  * Register block styles.

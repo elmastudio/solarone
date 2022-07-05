@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Two-column mission statement with image left and text right (default)
- * Slug: solarone/about-mission-default
- * Categories: about
+ * Slug: solarone/featured-mission-default
+ * Categories: featured
  */
 ?>
 
 <!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":13,"paddingBottom":18} -->
 <div class="wp-block-group alignfull has-background-primary-background-color has-background pt__13 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:heading {"level":1,"textColor":"font-primary","fontSize":"text-5-xl","paddingBottom":13} -->
 <h1 class="has-font-primary-color has-text-color has-text-5-xl-font-size pb__13"><?php echo esc_html__('Our Journey so far', 'soloarone'); ?></h1>
 <!-- /wp:heading --></div>
@@ -54,6 +54,6 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__7 col_start_t__1 col_end_t__6 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:image {"id":22319,"sizeSlug":"full","linkDestination":"none","className":"size-full is-style-default","borderRadius":"l"} -->
 <figure class="wp-block-image size-full is-style-default br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/solarone-about.jpeg" alt="SolarOne WordPress FSE Block Theme"/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->

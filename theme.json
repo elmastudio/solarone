@@ -195,7 +195,7 @@
 				},
 				{
 					"slug": "gradient-tertiary",
-					"gradient": "linear-gradient(75.84deg, #DDD2FF 0%, #D2FFD6 100%);",
+					"gradient": "linear-gradient(90deg, #044FE7 0%, #7761FF 100%);",
 					"name": "Gradient 3"
 				}
 			]
@@ -314,7 +314,7 @@
 		},
 		"custom": {
 			"line-height": {
-				"body": 1.5,
+				"body": 1.6,
 				"heading": 1.1
 			}
 		},

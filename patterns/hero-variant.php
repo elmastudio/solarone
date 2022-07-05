@@ -8,7 +8,7 @@
 
 <!-- wp:group {"align":"full","backgroundColor":"variant-background-primary"} -->
 <div class="wp-block-group alignfull has-variant-background-primary-background-color has-background"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingTop":0} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":8,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center","marginTopDesktop":0,"marginTopTablet":8,"marginTopMobile":7} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":8,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center","marginTopDesktop":0,"marginTopTablet":8,"marginTopMobile":7} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__8 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking mt_d__0 mt_t__8 mt_m__7"><!-- wp:group -->
 <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"variant-tertiary","fontSize":"text-xl"} -->
 <p class="has-variant-tertiary-color has-text-color has-text-xl-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html__('Reach new audiences', 'soloarone'); ?></p>
@@ -40,6 +40,6 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__13 col_start_t__3 col_end_t__10 col_start_m__2 col_end_m__12 align-self__start justify-self__start no-stacking mt_m__8"><!-- wp:image {"id":22256,"sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/solarone-hero-01.png" alt="Full Site Editing Block WordPress Theme"/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->

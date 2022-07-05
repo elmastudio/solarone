@@ -3,7 +3,7 @@ Contributors: elmastudio
 Requires at least: 5.9
 Tested up to: WordPress 6.0
 Requires PHP: 7.0
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,16 @@ License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
 Source: (https://github.com/SorkinType/SplineSans)
 
 == Changelog ==
+
+= 1.4.0 =
+* Released: July 4, 2022
+
+* New: One Pricing pattern, Pricing pattern category and Pricing page pattern.
+* New: Two FAQ patterns and FAQs pattern category.
+* New: Two one-column Testimonial patterns.
+* Enhance: Delete Customizer registration, since the Customizer is not needed in the theme.
+* Enhance: Update all patterns with Grid block update.
+* Bugfix: Outer margins in Footer patterns.
 
 = 1.3.0 =
 * Released: June 23, 2022

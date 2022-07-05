@@ -8,7 +8,7 @@
 
 <!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":18,"paddingBottom":18} -->
 <div class="wp-block-group alignfull has-background-primary-background-color has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch"} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:heading {"textAlign":"center","textColor":"font-primary","fontSize":"text-xxxl","paddingTop":0} -->
 <h2 class="has-text-align-center has-font-primary-color has-text-color has-text-xxxl-font-size"><?php echo esc_html__('Driven to Enhance Your Online Experience', 'soloarone'); ?></h2>
 <!-- /wp:heading -->
@@ -16,11 +16,11 @@
 <!-- wp:paragraph {"align":"center","textColor":"font-secondary","fontSize":"text-m","paddingTop":7} -->
 <p class="has-text-align-center has-font-secondary-color has-text-color has-text-m-font-size pt__7"><?php echo esc_html__('We create compelling experiences and exceptional campaigns for the world\'s top brands and social ventures.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container -->
 
 <!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingTop":13} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l pt__13"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"stretch","justifyItem":"stretch","borderColor":"border-secondary","backgroundColor":"background-primary","style":{"border":{"width":"1px"}},"borderRadius":"l"} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l pt__13"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"stretch","justifyItem":"stretch","borderColor":"border-secondary","backgroundColor":"background-primary","style":{"border":{"width":"1px"}},"borderRadius":"l"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__7 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__stretch justify-self__stretch no-stacking has-border-color has-border-secondary-border-color has-background-primary-background-color has-background br-all__l" style="border-width:1px"><!-- wp:ainoblocks/testimonial {"style":"indent-l","paddingBottom":0} -->
 <div class="wp-block-ainoblocks-testimonial indent-l"><!-- wp:ainoblocks/card {"borderRadius":"none","paddingTop":10,"paddingBottom":10,"paddingLeft":10,"paddingRight":10,"className":"relative"} -->
 <div class="wp-block-ainoblocks-card shadow-none pt__10 pb__10 pl__10 pr__10 relative br-all__none"><!-- wp:ainoblocks/icon {"iconType":"quote","iconSize":"size-l","textColor":"font-secondary"} -->
@@ -106,6 +106,6 @@
 <!-- /wp:group --></div>
 <!-- /wp:ainoblocks/card --></div>
 <!-- /wp:ainoblocks/testimonial --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->

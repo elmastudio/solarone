@@ -8,7 +8,7 @@
 
 <!-- wp:group {"align":"full"} -->
 <div class="wp-block-group alignfull"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingTop":13} -->
-<div class="wp-block-ainoblocks-grid-container alignwide col-gap-l pt__13"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"stretch","marginTopDesktop":0,"marginTopTablet":0,"marginTopMobile":0} -->
+<div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l pt__13"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"stretch","marginTopDesktop":0,"marginTopTablet":0,"marginTopMobile":0} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__center justify-self__stretch no-stacking mt_d__0 mt_t__0 mt_m__0"><!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__center__t align-items__center__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item {"flexShrink":true} -->
 <div class="wp-block-ainoblocks-flex-item auto" style="flex-shrink:0"><!-- wp:image {"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
@@ -66,6 +66,6 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
-<!-- /wp:ainoblocks/grid-item --></div></div>
+<!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->
