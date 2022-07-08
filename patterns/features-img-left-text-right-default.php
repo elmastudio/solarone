@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Featured text left and image right (default)
- * Slug: solarone/featured-img-left-text-right-default
- * Categories: featured
+ * Title: Text left and image right (default)
+ * Slug: solarone/features-img-left-text-right-default
+ * Categories: features
  */
 ?>
 

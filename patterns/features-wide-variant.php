@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Featured with wide image and text above (variant)
- * Slug: solarone/featured-wide-variant
- * Categories: featured
+ * Title: Wide image and text above (variant)
+ * Slug: solarone/features-wide-variant
+ * Categories: features
  */
 ?>
 

@@ -7,8 +7,8 @@
  */
 ?>
 
-<!-- wp:group {"className":"site-header pro-light-s"} -->
-<div class="wp-block-group site-header pro-light-s"><!-- wp:group {"className":"header-content tablet-flex justify-between","layout":{"type":"default"},"paddingTop":8,"paddingBottom":8} -->
+<!-- wp:group {"className":"site-header"} -->
+<div class="wp-block-group site-header"><!-- wp:group {"className":"header-content tablet-flex justify-between","layout":{"type":"default"},"paddingTop":8,"paddingBottom":8} -->
 <div class="wp-block-group header-content tablet-flex justify-between pt__8 pb__8"><!-- wp:ainoblocks/flexbox {"flexWrapTablet":"nowrap__t","flexWrapMobile":"wrap__m","justifyContentMobile":"justify__between__m","alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m","alignContentDesktop":"align-cont__center__d","paddingLeft":0} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap__t wrap__m justify__flexstart__d justify__flexstart__t justify__between__m align-items__center__d align-items__center__t align-items__center__m align-cont__center__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__center__t align-items__center__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item {"flexShrink":true,"alignSelfDesktop":"align__auto__d"} -->

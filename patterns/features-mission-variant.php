@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Two-column mission statement with image left and text right (variant)
- * Slug: solarone/featured-mission-variant
- * Categories: featured
+ * Slug: solarone/features-mission-variant
+ * Categories: features
  */
 ?>
 

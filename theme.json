@@ -13,12 +13,11 @@
 			"margin": true,
 			"padding": true,
 			"blockGap": true,
-			"units": ["px", "rem", "vh", "vw"]
+			"units": ["px", "em", "rem", "%", "vh", "vw"]
 		},
 		"color": {
 			"defaultPalette": false,
 			"defaultGradients": false,
-			"duotone": [],
 			"link": true,
 			"custom": true,
 			"palette": [

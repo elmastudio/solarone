@@ -75,8 +75,8 @@ function solarone_register_pattern_categories() {
 
 	$block_pattern_categories = array(
 		'hero'         => array( 'label' => __( 'Heroes' ) ),
-		'featured'     => array( 'label' => __( 'Features' ) ),
-		'teams'         => array( 'label' => __( 'Teams' ) ),
+		'features'     => array( 'label' => __( 'Features' ) ),
+		'teams'        => array( 'label' => __( 'Teams' ) ),
 		'testimonials' => array( 'label' => __( 'Testimonials' ) ),
 		'faqs'         => array( 'label' => __( 'FAQs' ) ),
 		'pricing'      => array( 'label' => __( 'Pricing' ) ),
