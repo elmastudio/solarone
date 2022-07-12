@@ -2,7 +2,7 @@
 /**
  * Title: Centered FAQs (variant)
  * Slug: solarone/faq-centered-variant
- * Categories: faqs
+ * Categories: accordions
  */
 ?>
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Landing SolarOne SolarOne
+ * Title: Landing SolarOne
  * Slug: solarone/page-landing-solarone
- * Categories: page
+ * Categories: pages
  */
 ?>
 

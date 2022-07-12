@@ -2,7 +2,7 @@
 /**
  * Title: Two-column posts with heading (variant)
  * Slug: solarone/query-posts-2-col-variant
- * Categories: query
+ * Categories: posts
  */
 ?>
 

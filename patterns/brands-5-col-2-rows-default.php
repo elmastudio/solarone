@@ -2,7 +2,7 @@
 /**
  * Title: Two row of five column brand images (default)
  * Slug: solarone/brands-5-col-2-rows-default
- * Categories: featured
+ * Categories: features
  */
 ?>
 

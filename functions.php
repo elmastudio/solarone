@@ -74,20 +74,20 @@ add_action( 'wp_enqueue_scripts', 'solarone_styles' );
 function solarone_register_pattern_categories() {
 
 	$block_pattern_categories = array(
-		'hero'         => array( 'label' => __( 'Heroes' ) ),
+		'heroes'       => array( 'label' => __( 'Heroes' ) ),
 		'features'     => array( 'label' => __( 'Features' ) ),
 		'teams'        => array( 'label' => __( 'Teams' ) ),
 		'testimonials' => array( 'label' => __( 'Testimonials' ) ),
-		'faqs'         => array( 'label' => __( 'FAQs' ) ),
+		'accordions'   => array( 'label' => __( 'Accordions' ) ),
 		'pricing'      => array( 'label' => __( 'Pricing' ) ),
 		'contact'      => array( 'label' => __( 'Contacts' ) ),
-		'query'        => array( 'label' => __( 'Queries' ) ),
-		'banner'       => array( 'label' => __( 'Banners' ) ),
-		'text'         => array( 'label' => __( 'Texts' ) ),
-		'newsletter'   => array( 'label' => __( 'Newsletters' ) ),
+		'posts'        => array( 'label' => __( 'Posts' ) ),
+		'banners'      => array( 'label' => __( 'Banners' ) ),
+		'texts'        => array( 'label' => __( 'Texts' ) ),
+		'newsletters'  => array( 'label' => __( 'Newsletters' ) ),
 		'header'       => array( 'label' => __( 'Headers' ) ),
 		'footer'       => array( 'label' => __( 'Footers' ) ),
-		'page'         => array( 'label' => __( 'Pages' ) ),
+		'pages'        => array( 'label' => __( 'Pages' ) ),
 	);
 
 	$block_pattern_categories = apply_filters( 'aino_block_pattern_categories', $block_pattern_categories );

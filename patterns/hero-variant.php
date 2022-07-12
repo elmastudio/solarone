@@ -2,7 +2,7 @@
 /**
  * Title: Text and CTA button left, image right (variant)
  * Slug: solarone/hero-variant
- * Categories: hero
+ * Categories: heroes
  */
 ?>
 

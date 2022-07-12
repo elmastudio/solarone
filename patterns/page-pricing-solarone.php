@@ -2,7 +2,7 @@
 /**
  * Title: Pricing SolarOne
  * Slug: solarone/page-pricing-solarone
- * Categories: page
+ * Categories: pages
  */
 ?>
 

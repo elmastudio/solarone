@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Centered Mailchimp newsletter form (default)
+ * Title: Mailchimp centered (default)
  * Slug: solarone/mailchimp-newsletter-default
- * Categories: newsletter
+ * Categories: newsletters
  */
 ?>
 
