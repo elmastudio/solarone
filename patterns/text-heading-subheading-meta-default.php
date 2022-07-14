@@ -9,8 +9,8 @@
 <!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":18} -->
 <div class="wp-block-group alignfull has-background-primary-background-color has-background pt__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":11,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"tertiary","fontSize":"text-xl"} -->
-<p class="has-text-align-center has-tertiary-color has-text-color has-text-xl-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html__('Meet the team', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"tertiary","fontSize":"text-xl","paddingTop":1} -->
+<p class="has-text-align-center has-tertiary-color has-text-color has-text-xl-font-size pt__1" style="font-style:normal;font-weight:700"><?php echo esc_html__('Meet the team', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","level":2,"textColor":"font-primary","fontSize":"text-4-xl","paddingTop":4} -->

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Featured text left and image right (default)
- * Slug: solarone/featured-text-left-img-right-default
- * Categories: featured
+ * Title: Text left and image right (default)
+ * Slug: solarone/features-text-left-img-right-default
+ * Categories: features
  */
 ?>
 
@@ -10,8 +10,8 @@
 <div class="wp-block-group alignfull has-background-secondary-background-color has-background pt__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs"} -->
-<p class="has-tertiary-color has-text-color has-text-xxs-font-size" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Enhance Idea', 'soloarone'); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs","paddingTop":1} -->
+<p class="has-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Enhance Idea', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textColor":"font-primary","fontSize":"text-xxl","paddingTop":5} -->

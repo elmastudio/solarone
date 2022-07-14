@@ -17,8 +17,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":9} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs"} -->
-<p class="has-text-xs-font-size"><?php echo esc_html__('Transparent data and insights.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs","paddingTop":1} -->
+<p class="has-text-xs-font-size pt__1"><?php echo esc_html__('Transparent data and insights.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -39,8 +39,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":9} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs"} -->
-<p class="has-text-xs-font-size"><?php echo esc_html__('The best tool for digital marketing.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs","paddingTop":1} -->
+<p class="has-text-xs-font-size pt__1"><?php echo esc_html__('The best tool for digital marketing.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -61,8 +61,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":9} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs"} -->
-<p class="has-text-xs-font-size"><?php echo esc_html__('Next level marketing technology.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs","paddingTop":1} -->
+<p class="has-text-xs-font-size pt__1"><?php echo esc_html__('Next level marketing technology.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>

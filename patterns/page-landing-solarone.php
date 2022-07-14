@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Landing SolarOne SolarOne
+ * Title: Landing SolarOne
  * Slug: solarone/page-landing-solarone
- * Categories: page
+ * Categories: pages
  */
 ?>
 
@@ -10,8 +10,8 @@
 <div class="wp-block-group alignfull has-background-primary-background-color has-background"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingTop":0} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":8,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center","marginTopDesktop":0,"marginTopTablet":8,"marginTopMobile":7} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__8 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking mt_d__0 mt_t__8 mt_m__7"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"tertiary","fontSize":"text-xl"} -->
-<p class="has-tertiary-color has-text-color has-text-xl-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html__('Reach new audiences', 'soloarone'); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"tertiary","fontSize":"text-xl","paddingTop":1} -->
+<p class="has-tertiary-color has-text-color has-text-xl-font-size pt__1" style="font-style:normal;font-weight:700"><?php echo esc_html__('Reach new audiences', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textColor":"font-primary","fontSize":"text-6-xl","paddingTop":5} -->
@@ -28,8 +28,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":0} -->
-<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-m","paddingRight":13} -->
-<p class="has-font-secondary-color has-text-color has-text-m-font-size pr__13"><?php echo esc_html__('We help you reach new markets and stand out from the competition.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-m","paddingRight":13,"paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-m-font-size pr__13 pt__1"><?php echo esc_html__('We help you reach new markets and stand out from the competition.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -55,8 +55,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":9} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs"} -->
-<p class="has-text-xs-font-size"><?php echo esc_html__('Transparent data and insights.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs","paddingTop":1} -->
+<p class="has-text-xs-font-size pt__1"><?php echo esc_html__('Transparent data and insights.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -77,8 +77,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":9} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs"} -->
-<p class="has-text-xs-font-size"><?php echo esc_html__('The best tool for digital marketing.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs","paddingTop":1} -->
+<p class="has-text-xs-font-size pt__1"><?php echo esc_html__('The best tool for digital marketing.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -99,8 +99,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":9} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs"} -->
-<p class="has-text-xs-font-size"><?php echo esc_html__('Next level marketing technology.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto pl__9"><!-- wp:paragraph {"fontSize":"text-xs","paddingTop":1} -->
+<p class="has-text-xs-font-size pt__1"><?php echo esc_html__('Next level marketing technology.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -170,33 +170,33 @@
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->
 
-<!-- wp:pattern {"slug":"solarone/featured-text-left-img-right-default"} /-->
+<!-- wp:pattern {"slug":"solarone/features-text-left-img-right-default"} /-->
 
-<!-- wp:pattern {"slug":"solarone/featured-img-left-text-right-default"} /-->
+<!-- wp:pattern {"slug":"solarone/features-img-left-text-right-default"} /-->
 
 <!-- wp:group {"align":"full","backgroundColor":"background-secondary","paddingTop":18} -->
 <div class="wp-block-group alignfull has-background-secondary-background-color has-background pt__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs"} -->
-<p class="has-tertiary-color has-text-color has-text-xxs-font-size" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Enhance Idea', 'soloarone'); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs","paddingTop":1} -->
+<p class="has-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Achieve success', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textColor":"font-primary","fontSize":"text-xxl","paddingTop":5} -->
-<h2 class="has-font-primary-color has-text-color has-text-xxl-font-size pt__5"><?php echo esc_html__('Strategic Marketing that Delivers Results', 'soloarone'); ?></h2>
+<h2 class="has-font-primary-color has-text-color has-text-xxl-font-size pt__5"><?php echo esc_html__('Technology can help you grow and thrive', 'soloarone'); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-m","paddingTop":3,"paddingRight":0} -->
-<p class="has-font-secondary-color has-text-color has-text-m-font-size pt__3"><?php echo esc_html__('We believe in turning good ideas into powerful brands. Our purpose is simple – to help organisations and people flourish.', 'soloarone'); ?></p>
+<p class="has-font-secondary-color has-text-color has-text-m-font-size pt__3"><?php echo esc_html__('With our proprietary technology and the best designers in the business, we craft smart solutions for our clients that use their data to drive better business.', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:ainoblocks/multiple-buttons {"paddingTop":7} -->
-<div class="wp-block-ainoblocks-multiple-buttons pt__7"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Try it now","backgroundColor":"primary","textColor":"button-color-primary"} -->
-<div class="wp-block-ainoblocks-button has-button-color-primary-color has-primary-background-color has-text-color has-background" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px"><?php echo esc_html__('Try it now', 'soloarone'); ?></a></div>
+<div class="wp-block-ainoblocks-multiple-buttons pt__7"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Get started","backgroundColor":"primary","textColor":"button-color-primary"} -->
+<div class="wp-block-ainoblocks-button has-button-color-primary-color has-primary-background-color has-text-color has-background" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px"><?php echo esc_html__('Get started', 'soloarone'); ?></a></div>
 <!-- /wp:ainoblocks/button -->
 
-<!-- wp:ainoblocks/button {"textColor":"primary","borderRadius":10,"label":"Learn more","className":"is-style-outline","style":{"spacing":{"margin":{"left":"1rem"}}}} -->
-<div class="wp-block-ainoblocks-button is-style-outline has-primary-color has-text-color" style="margin-left:1rem;border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px"><?php echo esc_html__('Learn more', 'soloarone'); ?></a></div>
+<!-- wp:ainoblocks/button {"textColor":"primary","borderRadius":10,"label":"More info","className":"is-style-outline","style":{"spacing":{"margin":{"left":"1rem"}}}} -->
+<div class="wp-block-ainoblocks-button is-style-outline has-primary-color has-text-color" style="margin-left:1rem;border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px"><?php echo esc_html__('More info', 'soloarone'); ?></a></div>
 <!-- /wp:ainoblocks/button --></div></div>
 <!-- /wp:ainoblocks/multiple-buttons --></div>
 <!-- /wp:group -->
@@ -211,7 +211,7 @@
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->
 
-<!-- wp:pattern {"slug":"solarone/featured-wide-default"} /-->
+<!-- wp:pattern {"slug":"solarone/features-wide-default"} /-->
 
 <!-- wp:pattern {"slug":"solarone/testimonials-cards-2-col-default"} /-->
 

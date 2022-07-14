@@ -3,7 +3,7 @@ Contributors: elmastudio
 Requires at least: 5.9
 Tested up to: WordPress 6.0
 Requires PHP: 7.0
-Stable tag: 1.4.0
+Stable tag: 1.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,17 @@ License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
 Source: (https://github.com/SorkinType/SplineSans)
 
 == Changelog ==
+
+= 1.4.1 =
+* Released: July 14, 2022
+
+* New: Contact page pattern plus support for Contact Form 7 plugin.
+* Enhance: Default paragraph paddding top. Enhances post editor experience and post writing.
+* Enhance: Set BlockGap to 0 in Index, Archive and Search Templates.
+* Enhance: Hide unneeded Spacing settings from Core Group block.
+* Enhance: Navigation block spacing increased to 2rem.
+* Update: All patterns.
+* Bugfix: Update deprecated Post Comments block with Comments Query Loop block in Templates Single Post and Post without Featured Image.
 
 = 1.4.0 =
 * Released: July 4, 2022

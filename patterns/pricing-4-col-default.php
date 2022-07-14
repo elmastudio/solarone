@@ -44,6 +44,7 @@
 <!-- /wp:ainoblocks/button --></div></div>
 <!-- /wp:ainoblocks/multiple-buttons -->
 
+
 <!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignContentDesktop":"align-cont__flexstart__d","paddingTop":7} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__stretch__t align-itms__stretch__m align-cont__flexstart__d align-cont__stretch__t align-cont__stretch__m shadow-none pt__7"><!-- wp:ainoblocks/flex-item -->
 <div class="wp-block-ainoblocks-flex-item auto"><!-- wp:ainoblocks/icon {"iconType":"checkcircle","iconSize":"size-s"} -->
@@ -52,8 +53,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">unlimited access to content</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">unlimited access to content</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -66,8 +67,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">weekly checkins</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">weekly checkins</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -80,8 +81,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">App progress tracking</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">App progress tracking</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -94,8 +95,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">Monthly campaign updates</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">Monthly campaign updates</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -134,8 +135,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">unlimited access to content</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">unlimited access to content</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -148,8 +149,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">weekly checkins</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">weekly checkins</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -162,8 +163,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">App progress tracking</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">App progress tracking</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -176,8 +177,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">Monthly campaign updates</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">Monthly campaign updates</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -226,8 +227,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">unlimited access to content</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">unlimited access to content</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -240,8 +241,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">weekly checkins</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">weekly checkins</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -254,8 +255,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">App progress tracking</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">App progress tracking</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -268,8 +269,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">Monthly campaign updates</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">Monthly campaign updates</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
@@ -308,8 +309,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">unlimited access to content</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">unlimited access to content</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -322,8 +323,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">weekly checkins</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">weekly checkins</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -336,8 +337,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">App progress tracking</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">App progress tracking</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -350,8 +351,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":3} -->
-<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs"} -->
-<p class="has-font-secondary-color has-text-color has-text-xs-font-size">Monthly campaign updates</p>
+<div class="wp-block-ainoblocks-flex-item auto pl__3"><!-- wp:paragraph {"textColor":"font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-font-secondary-color has-text-color has-text-xs-font-size pt__1">Monthly campaign updates</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
