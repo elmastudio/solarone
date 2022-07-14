@@ -10,8 +10,8 @@
 <div class="wp-block-group alignfull has-variant-background-primary-background-color has-background"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingTop":0} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":8,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center","marginTopDesktop":0,"marginTopTablet":8,"marginTopMobile":7} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__8 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking mt_d__0 mt_t__8 mt_m__7"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"variant-tertiary","fontSize":"text-xl"} -->
-<p class="has-variant-tertiary-color has-text-color has-text-xl-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html__('Reach new audiences', 'soloarone'); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"variant-tertiary","fontSize":"text-xl","paddingTop":1} -->
+<p class="has-variant-tertiary-color has-text-color has-text-xl-font-size pt__1" style="font-style:normal;font-weight:700"><?php echo esc_html__('Reach new audiences', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-6-xl","paddingTop":5} -->
@@ -28,8 +28,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"paddingLeft":0} -->
-<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-m","paddingRight":13} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-m-font-size pr__13"><?php echo esc_html__('We help you reach new markets and stand out from the competition.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-m","paddingRight":13,"paddingTop":1} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-m-font-size pr__13 pt__1"><?php echo esc_html__('We help you reach new markets and stand out from the competition.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>

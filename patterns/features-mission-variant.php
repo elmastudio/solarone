@@ -16,8 +16,8 @@
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":12,"gridColumnStartTablet":7,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__7 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-l"} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-l-font-size"><?php echo esc_html__('We are a creative content and design agency for startups and small businesses. We elevate brands with captivating content and engaging, beautiful design - turning visions into realities.', 'soloarone'); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-l","paddingTop":1} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-l-font-size pt__1"><?php echo esc_html__('We are a creative content and design agency for startups and small businesses. We elevate brands with captivating content and engaging, beautiful design - turning visions into realities.', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-l","paddingTop":12} -->
@@ -28,24 +28,24 @@
 <p class="has-variant-font-primary-color has-text-color has-text-6-xl-font-size pt__9" style="font-style:normal;font-weight:600;letter-spacing:-2px"><?php echo esc_html__('48+', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs",} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size"><?php echo esc_html__('Creative team members and contractors.', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__1"><?php echo esc_html__('Creative team members and contractors.', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","letterSpacing":"-2px"}},"textColor":"variant-font-primary","fontSize":"text-6-xl","paddingTop":9} -->
 <p class="has-variant-font-primary-color has-text-color has-text-6-xl-font-size pt__9" style="font-style:normal;font-weight:600;letter-spacing:-2px"><?php echo esc_html__('62%', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs",} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size"><?php echo esc_html__('Revenue on average for our clients.', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__1"><?php echo esc_html__('Revenue on average for our clients.', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","letterSpacing":"-2px"}},"textColor":"variant-font-primary","fontSize":"text-6-xl","paddingTop":9} -->
 <p class="has-variant-font-primary-color has-text-color has-text-6-xl-font-size pt__9" style="font-style:normal;font-weight:600;letter-spacing:-2px"><?php echo esc_html__('78,958', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs"} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size"><?php echo esc_html__('Total orders of our marketing App addons.', 'soloarone'); ?></p>
+<!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":1} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__1"><?php echo esc_html__('Total orders of our marketing App addons.', 'soloarone'); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:ainoblocks/grid-item -->

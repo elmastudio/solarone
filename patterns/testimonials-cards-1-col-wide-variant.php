@@ -14,7 +14,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","textColor":"font-primary","fontSize":"text-xxxl","paddingTop":5} -->
-<h2 class="has-text-align-center has-font-primary-color has-text-color has-text-xxxl-font-size pt__5"><?php echo esc_html__('Get to know our passionate team of digital marketing experts.', 'soloarone'); ?><?php echo esc_html__('Find out what our most successful clients say about us', 'soloarone'); ?></h2>
+<h2 class="has-text-align-center has-font-primary-color has-text-color has-text-xxxl-font-size pt__5"><?php echo esc_html__('Find out what our most successful clients say about us', 'soloarone'); ?></h2>
 <!-- /wp:heading --></div>
 <!-- /wp:ainoblocks/grid-item -->
 

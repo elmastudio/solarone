@@ -10,11 +10,11 @@
 <div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:heading {"textAlign":"center","textColor":"variant-font-primary","fontSize":"text-xxxl","paddingTop":0} -->
-<h2 class="has-text-align-center has-variant-font-primary-color has-text-color has-text-xxxl-font-size"><?php echo esc_html__('Driven to Enhance Your Online Experience', 'soloarone'); ?></h2>
+<h2 class="has-text-align-center has-variant-font-primary-color has-text-color has-text-xxxl-font-size"><?php echo esc_html__('Find out what our most successful clients say about us', 'soloarone'); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","textColor":"variant-font-secondary","fontSize":"text-m","paddingTop":7} -->
-<p class="has-text-align-center has-variant-font-secondary-color has-text-color has-text-m-font-size pt__7"><?php echo esc_html__('We create compelling experiences and exceptional campaigns for the world\'s top brands and social ventures', 'soloarone'); ?>.</p>
+<p class="has-text-align-center has-variant-font-secondary-color has-text-color has-text-m-font-size pt__7"><?php echo esc_html__('It’s always the best source to hear from others who have already worked with us.', 'soloarone'); ?>.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container -->

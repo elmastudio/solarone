@@ -12,8 +12,8 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking"><!-- wp:ainoblocks/card {"backgroundColor":"variant-background-secondary","borderRadius":"l","paddingTop":13,"paddingBottom":13,"paddingLeft":13,"paddingRight":13} -->
 <div class="wp-block-ainoblocks-card shadow-none pt__13 pb__13 pl__13 pr__13 has-variant-background-secondary-background-color has-background br-all__l"><!-- wp:ainoblocks/flexbox {"flexDirectionTablet":"direction__col__t","flexDirectionMobile":"direction__col__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__col__t direction__col__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__stretch__d align-items__stretch__t align-itms__stretch__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item -->
-<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:heading {"textColor":"variant-font-primary","className":"test","fontSize":"text-4-xl"} -->
-<h2 class="test has-variant-font-primary-color has-text-color has-text-4-xl-font-size"><?php echo esc_html__('Deliver amazing digital experiences.', 'soloarone'); ?></h2>
+<div class="wp-block-ainoblocks-flex-item auto"><!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-4-xl"} -->
+<h2 class="has-variant-font-primary-color has-text-color has-text-4-xl-font-size"><?php echo esc_html__('Deliver amazing digital experiences.', 'soloarone'); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"textColor":"variant-font-secondary","fontSize":"text-m","paddingTop":5,"paddingBottom":6} -->
