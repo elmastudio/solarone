@@ -54,7 +54,9 @@ Source: (https://github.com/SorkinType/SplineSans)
 == Changelog ==
 
 = 1.4.2 =
-* Released: July 14, 2022
+* Released: July 19, 2022
+* Enhance: Theme.json file clean up.
+* Enhance: CSS enhancements to forms.
 
 = 1.4.1 =
 * Released: July 14, 2022
