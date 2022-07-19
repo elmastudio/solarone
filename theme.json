@@ -18,8 +18,7 @@
 			"defaultGradients": false,
 			"link": true,
 			"custom": true,
-			"palette": [
-				{
+			"palette": [{
 					"slug": "background-primary",
 					"name": "Background 1",
 					"color": "#ffffff"
@@ -154,7 +153,7 @@
 					"color": "#A2FFFB",
 					"name": "Variant Accent 2"
 				},
-				{ 
+				{
 					"slug": "variant-quinary",
 					"color": "#BBAFFF",
 					"name": "Variant Accent 3"
@@ -180,8 +179,7 @@
 					"name": "Variant Button Text Hover"
 				}
 			],
-			"gradients": [
-				{
+			"gradients": [{
 					"slug": "gradient-primary",
 					"gradient": "linear-gradient(75.84deg, #DDD2FF 0%, #D2FFD6 100%);",
 					"name": "Gradient 1"
@@ -203,22 +201,19 @@
 			"wideSize": "112.5rem"
 		},
 		"typography": {
-			"fontFamilies": [
-				{
+			"fontFamilies": [{
 					"fontFamily": "\"Epilogue\", sans-serif",
 					"slug": "epilogue",
 					"name": "Epilogue",
-					"fontFace": [
-                        {
-                            "fontFamily": "Epilogue",
-                            "fontWeight": "200 900",
-                            "fontStyle": "normal",
-                            "fontStretch": "normal",
-                            "src": [
-								"file:./assets/fonts/Epilogue.woff2"
-                            ]
-                        }
-                    ]
+					"fontFace": [{
+						"fontFamily": "Epilogue",
+						"fontWeight": "200 900",
+						"fontStyle": "normal",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/Epilogue.woff2"
+						]
+					}]
 				},
 				{
 					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
@@ -231,8 +226,7 @@
 					"name": "Monospace"
 				}
 			],
-			"fontSizes": [
-				{
+			"fontSizes": [{
 					"name": "3XS",
 					"size": "0.75rem",
 					"slug": "text-xxxs"
@@ -319,8 +313,7 @@
 		"blocks": {
 			"core/preformatted": {
 				"color": {
-					"palette": [
-						{
+					"palette": [{
 							"slug": "code-background",
 							"color": "#1e293b",
 							"name": "Code Background"
@@ -459,8 +452,7 @@
 			}
 		}
 	},
-	"customTemplates": [
-		{
+	"customTemplates": [{
 			"name": "header-footer",
 			"title": "Header and Footer",
 			"postTypes": [
@@ -496,8 +488,7 @@
 			]
 		}
 	],
-	"templateParts": [
-		{
+	"templateParts": [{
 			"name": "header",
 			"area": "header"
 		},

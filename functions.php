@@ -52,7 +52,7 @@ if ( ! function_exists( 'solarone_styles' ) ) :
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 		wp_register_style(
 			'solarone-style',
-			get_template_directory_uri() . '//assets/build/css/main.css',
+			get_template_directory_uri() . '/assets/build/css/main.css',
 			array(),
 			$version_string
 		);
