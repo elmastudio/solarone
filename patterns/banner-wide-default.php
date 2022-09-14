@@ -2,7 +2,7 @@
 /**
  * Title: Banner wide (default)
  * Slug: solarone/banner-wide-default
- * Categories: banners
+ * Categories: ctas
  */
 ?>
 

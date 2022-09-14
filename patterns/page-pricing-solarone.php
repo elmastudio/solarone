@@ -19,19 +19,6 @@
 <!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container -->
 
-<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":18,"paddingBottom":18} -->
-<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
-<div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:heading {"textAlign":"center","textColor":"font-primary","fontSize":"text-5-xl","paddingTop":0} -->
-<h2 class="has-text-align-center has-font-primary-color has-text-color has-text-5-xl-font-size">The right plan for your business</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center","textColor":"font-secondary","paddingTop":5} -->
-<p class="has-text-align-center has-font-secondary-color has-text-color pt__5">We are a small team of digital marketing experts supporting your businesses growth. Let's connect and let us help you grow.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:ainoblocks/grid-item --></div>
-<!-- /wp:ainoblocks/grid-container -->
-
 <!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingTop":13} -->
 <div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l pt__13"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":4,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__4 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
@@ -377,7 +364,7 @@
 <!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":18,"paddingBottom":18} -->
 <div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"variant-tertiary","fontSize":"text-xxs","paddingBottom":1} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"variant-tertiary","fontSize":"text-xxs","paddingTop":1} -->
 <p class="has-text-align-center has-variant-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('We are here to help you', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
@@ -435,7 +422,7 @@
 <!-- wp:group {"align":"full","gradient":"gradient-primary","paddingTop":18,"paddingBottom":18} -->
 <div class="wp-block-group alignfull has-gradient-primary-gradient-background has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs","paddingBottom":1} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs","paddingTop":1} -->
 <p class="has-text-align-center has-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Featured Client testimonials', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
