@@ -6,10 +6,10 @@
  */
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":13,"paddingBottom":18} -->
-<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__13 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
-<div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:heading {"textAlign":"center","textColor":"font-primary","fontSize":"text-5-xl"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|9","left":"var:preset|spacing|9"}}},"backgroundColor":"background-primary","paddingTop":13,"paddingBottom":18} -->
+<div class="wp-block-group alignfull has-background-primary-background-color has-background pt__13 pb__18" style="padding-right:var(--wp--preset--spacing--9);padding-left:var(--wp--preset--spacing--9)"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
+<div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"className":"align-self__start","borderRadius":"none"} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 justify-self__stretch no-stacking mt_t__0 mt_m__8 align-self__start br-all__none"><!-- wp:heading {"textAlign":"center","textColor":"font-primary","fontSize":"text-5-xl"} -->
 <h2 class="has-text-align-center has-font-primary-color has-text-color has-text-5-xl-font-size">The right plan for your business</h2>
 <!-- /wp:heading -->
 
@@ -20,8 +20,8 @@
 <!-- /wp:ainoblocks/grid-container -->
 
 <!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l","paddingTop":13} -->
-<div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l pt__13"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":4,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__4 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
+<div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l pt__13"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":4,"gridColumnStartTablet":1,"gridColumnEndTablet":4,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"className":"align-self__start","borderRadius":"none"} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__4 col_start_t__1 col_end_t__4 col_start_m__1 col_end_m__13 justify-self__stretch no-stacking mt_t__0 mt_m__8 align-self__start br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
 <div class="wp-block-ainoblocks-card shadow-none pt__7 pb__7 pl__7 pr__7 has-border-color has-border-secondary-border-color has-background-primary-background-color has-background br-all__xs" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px"><!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l"} -->
 <h3 class="has-font-primary-color has-text-color has-text-l-font-size">Hobby</h3>
 <!-- /wp:heading -->
@@ -39,11 +39,10 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:ainoblocks/multiple-buttons {"fullWidth":true} -->
-<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
+<div class="wp-block-ainoblocks-multiple-buttons d__stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
 <div class="wp-block-ainoblocks-button" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px">Select plan</a></div>
-<!-- /wp:ainoblocks/button --></div></div>
+<!-- /wp:ainoblocks/button --></div>
 <!-- /wp:ainoblocks/multiple-buttons -->
-
 
 <!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignContentDesktop":"align-cont__flexstart__d","paddingTop":7} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__stretch__t align-itms__stretch__m align-cont__flexstart__d align-cont__stretch__t align-cont__stretch__m shadow-none pt__7"><!-- wp:ainoblocks/flex-item -->
@@ -103,8 +102,8 @@
 <!-- /wp:ainoblocks/card --></div>
 <!-- /wp:ainoblocks/grid-item -->
 
-<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":7,"gridColumnStartTablet":4,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__4 col_end_t__7 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":7,"gridColumnStartTablet":4,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"className":"align-self__start","borderRadius":"none"} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__7 col_start_t__4 col_end_t__7 col_start_m__1 col_end_m__13 justify-self__stretch no-stacking mt_t__0 mt_m__8 align-self__start br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
 <div class="wp-block-ainoblocks-card shadow-none pt__7 pb__7 pl__7 pr__7 has-border-color has-border-secondary-border-color has-background-primary-background-color has-background br-all__xs" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px"><!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l"} -->
 <h3 class="has-font-primary-color has-text-color has-text-l-font-size">Starter</h3>
 <!-- /wp:heading -->
@@ -122,9 +121,9 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:ainoblocks/multiple-buttons {"fullWidth":true} -->
-<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
+<div class="wp-block-ainoblocks-multiple-buttons d__stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
 <div class="wp-block-ainoblocks-button" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px">Select plan</a></div>
-<!-- /wp:ainoblocks/button --></div></div>
+<!-- /wp:ainoblocks/button --></div>
 <!-- /wp:ainoblocks/multiple-buttons -->
 
 <!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignContentDesktop":"align-cont__flexstart__d","paddingTop":7} -->
@@ -185,8 +184,8 @@
 <!-- /wp:ainoblocks/card --></div>
 <!-- /wp:ainoblocks/grid-item -->
 
-<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":7,"gridColumnEndDesktop":10,"gridColumnStartTablet":7,"gridColumnEndTablet":10,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__10 col_start_t__7 col_end_t__10 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-secondary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":7,"gridColumnEndDesktop":10,"gridColumnStartTablet":7,"gridColumnEndTablet":10,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"className":"align-self__start","borderRadius":"none"} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__7 col_end_d__10 col_start_t__7 col_end_t__10 col_start_m__1 col_end_m__13 justify-self__stretch no-stacking mt_t__0 mt_m__8 align-self__start br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-secondary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
 <div class="wp-block-ainoblocks-card shadow-none pt__7 pb__7 pl__7 pr__7 has-border-color has-border-secondary-border-color has-background-secondary-background-color has-background br-all__xs" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px"><!-- wp:ainoblocks/flexbox {"justifyContentDesktop":"justify__between__d","justifyContentTablet":"justify__between__t","justifyContentMobile":"justify__between__m","alignItemsDesktop":"align-items__flexstart__d","alignItemsTablet":"align-items__flexstart__t","alignItemsMobile":"align-items__flexstart__m","alignContentDesktop":"align-cont__flexstart__d","alignContentTablet":"align-cont__flexstart__t","alignContentMobile":"align-cont__flexstart__m","paddingTop":0,"paddingBottom":0} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__between__d justify__between__t justify__between__m align-items__flexstart__d align-items__flexstart__t align-items__flexstart__m align-cont__flexstart__d align-cont__flexstart__t align-cont__flexstart__m shadow-none"><!-- wp:ainoblocks/flex-item -->
 <div class="wp-block-ainoblocks-flex-item auto"><!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l"} -->
@@ -195,8 +194,8 @@
 <!-- /wp:ainoblocks/flex-item -->
 
 <!-- wp:ainoblocks/flex-item {"alignSelfDesktop":"align__flexstart__d"} -->
-<div class="wp-block-ainoblocks-flex-item align__flexstart__d auto"><!-- wp:ainoblocks/badge {"content":"Popular","backgroundColor":"quarternary","fontSize":"text-xs","textColor":"background-primary","style":{"border":{"radius":"6px"}}} -->
-<div class="wp-block-ainoblocks-badge size__m has-background-primary-color has-quarternary-background-color has-text-color has-background has-text-xs-font-size" style="border-radius:6px"><span>Popular</span></div>
+<div class="wp-block-ainoblocks-flex-item align__flexstart__d auto"><!-- wp:ainoblocks/badge {"content":"Popular","backgroundColor":"accent-tertiary","fontSize":"text-xs","style":{"border":{"radius":"6px"}},"textColor":"background-primary"} -->
+<div class="wp-block-ainoblocks-badge size__m has-background-primary-color has-accent-tertiary-background-color has-text-color has-background has-text-xs-font-size" style="border-radius:6px"><span>Popular</span></div>
 <!-- /wp:ainoblocks/badge --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox -->
@@ -214,9 +213,9 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:ainoblocks/multiple-buttons {"fullWidth":true} -->
-<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
+<div class="wp-block-ainoblocks-multiple-buttons d__stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
 <div class="wp-block-ainoblocks-button" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px">Select plan</a></div>
-<!-- /wp:ainoblocks/button --></div></div>
+<!-- /wp:ainoblocks/button --></div>
 <!-- /wp:ainoblocks/multiple-buttons -->
 
 <!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignContentDesktop":"align-cont__flexstart__d","paddingTop":7} -->
@@ -277,8 +276,8 @@
 <!-- /wp:ainoblocks/card --></div>
 <!-- /wp:ainoblocks/grid-item -->
 
-<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":10,"gridColumnEndDesktop":13,"gridColumnStartTablet":10,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__10 col_end_d__13 col_start_t__10 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
+<!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":10,"gridColumnEndDesktop":13,"gridColumnStartTablet":10,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"className":"align-self__start","borderRadius":"none"} -->
+<div class="wp-block-ainoblocks-grid-item col_start_d__10 col_end_d__13 col_start_t__10 col_end_t__13 col_start_m__1 col_end_m__13 justify-self__stretch no-stacking mt_t__0 mt_m__8 align-self__start br-all__none"><!-- wp:ainoblocks/card {"backgroundColor":"background-primary","borderColor":"border-secondary","borderRadius":"xs","borderTopWidth":1,"borderRightWidth":1,"borderBottomWidth":1,"borderLeftWidth":1} -->
 <div class="wp-block-ainoblocks-card shadow-none pt__7 pb__7 pl__7 pr__7 has-border-color has-border-secondary-border-color has-background-primary-background-color has-background br-all__xs" style="border-top-width:1px;border-right-width:1px;border-bottom-width:1px;border-left-width:1px"><!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l"} -->
 <h3 class="has-font-primary-color has-text-color has-text-l-font-size">Enterprise</h3>
 <!-- /wp:heading -->
@@ -296,9 +295,9 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:ainoblocks/multiple-buttons {"fullWidth":true} -->
-<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
+<div class="wp-block-ainoblocks-multiple-buttons d__stretch"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Select plan"} -->
 <div class="wp-block-ainoblocks-button" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px">Select plan</a></div>
-<!-- /wp:ainoblocks/button --></div></div>
+<!-- /wp:ainoblocks/button --></div>
 <!-- /wp:ainoblocks/multiple-buttons -->
 
 <!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignContentDesktop":"align-cont__flexstart__d","paddingTop":7} -->
@@ -361,11 +360,13 @@
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->
 
+
+
 <!-- wp:group {"align":"full","backgroundColor":"variant-background-primary","paddingTop":18,"paddingBottom":18} -->
 <div class="wp-block-group alignfull has-variant-background-primary-background-color has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"variant-tertiary","fontSize":"text-xxs","paddingTop":1} -->
-<p class="has-text-align-center has-variant-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('We are here to help you', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"variant-accent-primary","fontSize":"text-xxs","paddingTop":1} -->
+<p class="has-text-align-center has-variant-accent-primary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('We are here to help you', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","textColor":"variant-font-primary","fontSize":"text-xxxl","paddingTop":5} -->
@@ -380,50 +381,54 @@
 <!-- /wp:ainoblocks/grid-item -->
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":11,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What do you think is the best way to keep learning when you are running a business?","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7,"style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary"} -->
-<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs pt__7 pb__7 pl__7 pr__7 has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size"><?php echo esc_html__('What do you think is the best way to keep learning when you are running a business?', 'soloarone'); ?></h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7"><?php echo esc_html__('Great question! My answer is there\'s no one right way to go about it. Even though today\'s fast-paced business world can demand optimised time management, self-accelerated education resources is critical for any entrepreneur looking to gain more knowledge on.', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none">
+
+<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What do you think is the best way to keep learning when you are running a business?","style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary","className":"br__xs","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7} -->
+<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background br-all__xs pt__7 pb__7 pl__7 pr__7" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size">What do you think is the best way to keep learning when you are running a business?</h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7">Great question! My answer is there's no one right way to go about it. Even though today's fast-paced business world can demand optimised time management, self-accelerated education resources is critical for any entrepreneur looking to gain more knowledge on.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:ainoblocks/accordion-faq-block -->
 
-<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What is the best digital marketing strategy that you have used?","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7,"style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary"} -->
-<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs pt__7 pb__7 pl__7 pr__7 has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size"><?php echo esc_html__('What is the best digital marketing strategy that you have used?', 'soloarone'); ?></h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7"><?php echo esc_html__('We have used a diversified digital marketing strategy to grow our business including SEO, Social Media Marketing, PPC, Content Marketing, Email Marketing and even Mobile Marketing.', 'soloarone'); ?></p>
+<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What is the best digital marketing strategy that you have used?","style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary","className":"br__xs","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7} -->
+<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background br-all__xs pt__7 pb__7 pl__7 pr__7" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size">What is the best digital marketing strategy that you have used?</h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7">We have used a diversified digital marketing strategy to grow our business including SEO, Social Media Marketing, PPC, Content Marketing, Email Marketing and even Mobile Marketing.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:ainoblocks/accordion-faq-block -->
 
-<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What's your favourite type of marketing?","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7,"style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary"} -->
-<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs pt__7 pb__7 pl__7 pr__7 has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size"><?php echo esc_html__('What\'s your favourite type of marketing?', 'soloarone'); ?></h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7"><?php echo esc_html__('Marketing is the communication of your brand vision, mission and value through a variety of channels.', 'soloarone'); ?></p>
+<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What's your favourite type of marketing?","style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary","className":"br__xs","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7} -->
+<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background br-all__xs pt__7 pb__7 pl__7 pr__7" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size">What's your favourite type of marketing?</h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7">Marketing is the communication of your brand vision, mission and value through a variety of channels.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:ainoblocks/accordion-faq-block -->
 
-<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What are some things you do to help run your business?","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7,"style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary"} -->
-<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs pt__7 pb__7 pl__7 pr__7 has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size"><?php echo esc_html__('What are some things you do to help run your business?', 'soloarone'); ?></h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7"><?php echo esc_html__('We offer a wide variety of marketing, communication and technical services to improve your business. Our solutions are fully adaptable and have proved successful time and time again.', 'soloarone'); ?></p>
+<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What are some things you do to help run your business?","style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary","className":"br__xs","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7} -->
+<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background br-all__xs pt__7 pb__7 pl__7 pr__7" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size">What are some things you do to help run your business?</h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7">We offer a wide variety of marketing, communication and technical services to improve your business. Our solutions are fully adaptable and have proved successful time and time again.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:ainoblocks/accordion-faq-block -->
 
-<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"Can I upgrade my plan after my purchase?","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7,"style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary"} -->
-<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs pt__7 pb__7 pl__7 pr__7 has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size"><?php echo esc_html__('Can I upgrade my plan after my purchase?', 'soloarone'); ?></h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7"><?php echo esc_html__('We offer a wide variety of marketing, communication and technical services to improve your business. Our solutions are fully adaptable and have proved successful time and time again.', 'soloarone'); ?></p>
+<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"Can I upgrade my plan after my purchase?","style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary","className":"br__xs","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7} -->
+<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background br-all__xs pt__7 pb__7 pl__7 pr__7" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size">Can I upgrade my plan after my purchase?</h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7">We offer a wide variety of marketing, communication and technical services to improve your business. Our solutions are fully adaptable and have proved successful time and time again.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:ainoblocks/accordion-faq-block -->
 
-<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What has been your biggest digital marketing challenge?","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7,"style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary"} -->
-<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs pt__7 pb__7 pl__7 pr__7 has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size"><?php echo esc_html__('What has been your biggest digital marketing challenge?', 'soloarone'); ?></h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
-<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7"><?php echo esc_html__('Marketing is the communication of your brand vision, mission and value through a variety of channels. We have used a diversified digital marketing strategy to grow our business including SEO, Social Media Marketing, PPC, Content Marketing, Email Marketing and even Mobile Marketing.', 'soloarone'); ?></p>
+<!-- wp:ainoblocks/accordion-faq-block {"backgroundColor":"variant-background-secondary","borderRadius":"xs","iconPosition":"icon__left","question":"What has been your biggest digital marketing challenge?","style":{"border":{"width":"1px"}},"borderColor":"variant-border-secondary","textColor":"variant-font-secondary","className":"br__xs","paddingTop":7,"paddingBottom":7,"paddingLeft":7,"paddingRight":7} -->
+<div class="wp-block-ainoblocks-accordion-faq-block icon__left br__xs has-border-color has-variant-border-secondary-border-color has-variant-font-secondary-color has-variant-background-secondary-background-color has-text-color has-background br-all__xs pt__7 pb__7 pl__7 pr__7" style="border-width:1px" x-data="{ open: false }" @click="open = !open" :class="{'open': open, 'close': ! open }"><div class="accordion"><h3 class="has-xxs-font-size">What has been your biggest digital marketing challenge?</h3></div><div class="panel"><!-- wp:paragraph {"placeholder":"Write an answer ...","textColor":"variant-font-secondary","fontSize":"text-xs","paddingTop":7} -->
+<p class="has-variant-font-secondary-color has-text-color has-text-xs-font-size pt__7">Marketing is the communication of your brand vision, mission and value through a variety of channels. We have used a diversified digital marketing strategy to grow our business including SEO, Social Media Marketing, PPC, Content Marketing, Email Marketing and even Mobile Marketing.</p>
 <!-- /wp:paragraph --></div></div>
-<!-- /wp:ainoblocks/accordion-faq-block --></div>
+<!-- /wp:ainoblocks/accordion-faq-block -->
+</div>
 <!-- /wp:ainoblocks/grid-item --></div></div>
 <!-- /wp:ainoblocks/grid-container --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","gradient":"gradient-primary","paddingTop":18,"paddingBottom":18} -->
-<div class="wp-block-group alignfull has-gradient-primary-gradient-background has-background pt__18 pb__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"right":"var:preset|spacing|9","left":"var:preset|spacing|9"}}},"gradient":"gradient-primary","paddingTop":18,"paddingBottom":18} -->
+<div class="wp-block-group alignfull has-gradient-primary-gradient-background has-background pt__18 pb__18" style="padding-right:var(--wp--preset--spacing--9);padding-left:var(--wp--preset--spacing--9)"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container alignwide ab-grid-block col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":4,"gridColumnEndDesktop":10,"gridColumnStartTablet":2,"gridColumnEndTablet":12,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"justifyItem":"stretch","marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs","paddingTop":1} -->
-<p class="has-text-align-center has-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Featured Client testimonials', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-grid-item col_start_d__4 col_end_d__10 col_start_t__2 col_end_t__12 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase","letterSpacing":"2px"}},"textColor":"accent-primary","fontSize":"text-xxs","paddingTop":1} -->
+<p class="has-text-align-center has-accent-primary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('Featured Client testimonials', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","textColor":"font-primary","fontSize":"text-xxxl","paddingTop":5} -->

@@ -9,8 +9,8 @@
 <!-- wp:group {"align":"full","backgroundColor":"background-primary","paddingTop":18,"paddingBottom":15} -->
 <div class="wp-block-group alignfull has-background-primary-background-color has-background pt__18 pb__15"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":3,"gridColumnEndDesktop":11,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"tertiary","fontSize":"text-xl","paddingTop":1} -->
-<p class="has-text-align-center has-tertiary-color has-text-color has-text-xl-font-size pt__1" style="font-style:normal;font-weight:700"><?php echo esc_html__('Meet the team', 'soloarone'); ?></p>
+<div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__11 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"accent-primary","fontSize":"text-xl","paddingTop":1} -->
+<p class="has-text-align-center has-accent-primary-color has-text-color has-text-xl-font-size pt__1" style="font-style:normal;font-weight:700"><?php echo esc_html__('Meet the team', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textAlign":"center","level":2,"textColor":"font-primary","fontSize":"text-4-xl","paddingTop":4} -->
@@ -26,8 +26,9 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container alignwide col-gap-l"><div class="wp-block-ainoblocks-grid-container__inner"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13">
-	<!-- wp:image {"sizeSlug":"full","borderRadius":"l"} -->
-<figure class="wp-block-image size-full br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-01-default.png" alt=""/></figure>
+
+<!-- wp:image {"sizeSlug":"full","style":{"border":{"radius":"48px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-01-default.png" alt="" style="border-radius:48px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":7} -->
@@ -40,8 +41,9 @@
 <!-- /wp:ainoblocks/grid-item -->
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":5,"gridColumnEndDesktop":9,"gridColumnStartTablet":5,"gridColumnEndTablet":9,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__9 col_start_t__5 col_end_t__9 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"sizeSlug":"full","borderRadius":"l"} -->
-<figure class="wp-block-image size-full br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-02-default.png" alt=""/></figure>
+<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__9 col_start_t__5 col_end_t__9 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13">
+	<!-- wp:image {"sizeSlug":"full","style":{"border":{"radius":"48px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-02-default.png" alt="" style="border-radius:48px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":7} -->
@@ -54,8 +56,9 @@
 <!-- /wp:ainoblocks/grid-item -->
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":9,"gridColumnEndDesktop":13,"gridColumnStartTablet":9,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__9 col_end_d__13 col_start_t__9 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"sizeSlug":"full","borderRadius":"l"} -->
-<figure class="wp-block-image size-full br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-03-default.png" alt=""/></figure>
+<div class="wp-block-ainoblocks-grid-item col_start_d__9 col_end_d__13 col_start_t__9 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13">
+	<!-- wp:image {"sizeSlug":"full","style":{"border":{"radius":"48px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-03-default.png" alt="" style="border-radius:48px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":7} -->
@@ -68,8 +71,9 @@
 <!-- /wp:ainoblocks/grid-item -->
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":1,"gridColumnEndDesktop":5,"gridColumnStartTablet":1,"gridColumnEndTablet":5,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"sizeSlug":"full","borderRadius":"l"} -->
-<figure class="wp-block-image size-full br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-04-default.png" alt=""/></figure>
+<div class="wp-block-ainoblocks-grid-item col_start_d__1 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13">
+	<!-- wp:image {"sizeSlug":"full","style":{"border":{"radius":"48px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-04-default.png" alt="" style="border-radius:48px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":7} -->
@@ -82,8 +86,9 @@
 <!-- /wp:ainoblocks/grid-item -->
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":5,"gridColumnEndDesktop":9,"gridColumnStartTablet":5,"gridColumnEndTablet":9,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__9 col_start_t__5 col_end_t__9 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"sizeSlug":"full","borderRadius":"l"} -->
-<figure class="wp-block-image size-full br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-05-default.png" alt=""/></figure>
+<div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__9 col_start_t__5 col_end_t__9 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13">
+	<!-- wp:image {"sizeSlug":"full","style":{"border":{"radius":"48px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-05-default.png" alt="" style="border-radius:48px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":7} -->
@@ -96,8 +101,10 @@
 <!-- /wp:ainoblocks/grid-item -->
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":9,"gridColumnEndDesktop":13,"gridColumnStartTablet":9,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingBottom":13} -->
-<div class="wp-block-ainoblocks-grid-item col_start_d__9 col_end_d__13 col_start_t__9 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13"><!-- wp:image {"sizeSlug":"full","borderRadius":"l"} -->
-<figure class="wp-block-image size-full br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-06-default.png" alt=""/></figure>
+<div class="wp-block-ainoblocks-grid-item col_start_d__9 col_end_d__13 col_start_t__9 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pb__13">
+
+<!-- wp:image {"sizeSlug":"full","style":{"border":{"radius":"48px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/team-06-default.png" alt="" style="border-radius:48px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"level":3,"textColor":"font-primary","fontSize":"text-l","paddingTop":7} -->
@@ -112,5 +119,6 @@
 <!-- /wp:ainoblocks/grid-item -->
 
 </div>
-<!-- /wp:ainoblocks/grid-container --></div>
+<!-- /wp:ainoblocks/grid-container -->
+</div>
 <!-- /wp:group -->

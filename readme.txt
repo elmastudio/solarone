@@ -1,9 +1,9 @@
 === SolarOne ===
 Contributors: elmastudio
-Requires at least: 5.9
-Tested up to: WordPress 6.0
+Requires at least: 6.1
+Tested up to: WordPress 6.1.1
 Requires PHP: 7.0
-Stable tag: 1.4.3
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,15 +36,40 @@ SolarOne WordPress theme bundles the following third-party resources:
 
 * TGM-Plugin-Activation, (c) Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
 
+Work Sans (font)
+Copyright 2019 The Work Sans Project Authors
+License: SIL Open Font License, Version 1.1, http://scripts.sil.org/OFL
+Source: https://github.com/weiweihuanghuang/Work-Sans
+
+Inter (font)
+Copyright 2020 The Inter Project Authors
+License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
+Source: (https://github.com/rsms/inter)
+
+Libre Franklin (font)
+Copyright 2020 The LibreFranklin Project Authors
+License: SIL Open Font License, Version 1.1, http://scripts.sil.org/OFL
+Source: https://github.com/impallari/Libre-Franklin
+
+Ibarra Real Nova (font)
+Copyright 2007 The Ibarra Real Nova Project Authors
+License: SIL Open Font License, Version 1.1, http://scripts.sil.org/OFL
+Source: https://github.com/googlefonts/ibarrareal
+
+Fraunces (font)
+Copyright 2018 The Fraunces Project Authors
+License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
+Source: (https://github.com/undercasetype/Fraunces)
+
+Urbanist (font)
+Copyright 2021 The Urbanist Project Authors
+License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
+Source: https://github.com/coreyhu/Urbanist
+
 Epilogue Font
 Copyright 2020 The Epilogue Project Authors
 License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
 Source: (https://github.com/Etcetera-Type-Co/Epilogue)
-
-Inter Font
-Copyright 2020 The Inter Project Authors
-License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
-Source: (https://github.com/rsms/inter)
 
 Spline Sans Font
 Copyright 2021 The Spline Sans Project Authors
@@ -53,17 +78,24 @@ Source: (https://github.com/SorkinType/SplineSans)
 
 == Changelog ==
 
-= 1.4.4 =
-* Released: August 14, 2022
+= 1.5.0 =
+* Released: November 21, 2022
+
+* New: Fonts.
+* Enhance: theme.json to support spacing, fluid typography and root padding.
 * Enhance: Color names.
-* Fix: Update theme patterns.
+* Fix: New color variables for input background and border colors to theme.json.
+* Fix: Theme patterns.
+* Fix: Header and Footer parts and patterns.
 
 = 1.4.3 =
 * Released: August 2, 2022
+
 * Enhance: Color palette.
 
 = 1.4.2 =
 * Released: July 19, 2022
+
 * Enhance: Theme.json file clean up.
 * Enhance: CSS enhancements to forms.
 

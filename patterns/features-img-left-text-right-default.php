@@ -10,8 +10,8 @@
 <div class="wp-block-group alignfull has-background-secondary-background-color has-background pt__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":12,"gridColumnStartTablet":7,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__12 col_start_t__7 col_end_t__13 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"tertiary","fontSize":"text-xxs","paddingTop":1} -->
-<p class="has-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('We help you shine', 'soloarone'); ?></p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"accent-primary","fontSize":"text-xxs","paddingTop":1} -->
+<p class="has-accent-primary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px"><?php echo esc_html__('We help you shine', 'soloarone'); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textColor":"font-primary","fontSize":"text-xxl","paddingTop":5} -->
@@ -23,9 +23,9 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:ainoblocks/multiple-buttons {"paddingTop":7} -->
-<div class="wp-block-ainoblocks-multiple-buttons pt__7"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"More details","backgroundColor":"primary","textColor":"button-color-primary"} -->
+<div class="wp-block-ainoblocks-multiple-buttons pt__7"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"More details","backgroundColor":"primary","textColor":"button-color-primary"} -->
 <div class="wp-block-ainoblocks-button has-button-color-primary-color has-primary-background-color has-text-color has-background" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px"><?php echo esc_html__('More details', 'soloarone'); ?></a></div>
-<!-- /wp:ainoblocks/button --></div></div>
+<!-- /wp:ainoblocks/button --></div>
 <!-- /wp:ainoblocks/multiple-buttons --></div>
 <!-- /wp:group -->
 </div>

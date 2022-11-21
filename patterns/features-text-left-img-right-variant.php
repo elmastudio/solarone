@@ -10,8 +10,8 @@
 <div class="wp-block-group alignfull has-variant-background-secondary-background-color has-background pt__18"><!-- wp:ainoblocks/grid-container {"columnGap":"col-gap-l"} -->
 <div class="wp-block-ainoblocks-grid-container ab-grid-block alignwide col-gap-l"><!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":6,"gridColumnStartTablet":1,"gridColumnEndTablet":7,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"alignItem":"center","justifyItem":"center"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__6 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__13 align-self__center justify-self__center no-stacking"><!-- wp:group -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"variant-tertiary","fontSize":"text-xxs","paddingTop":1} -->
-<p class="has-variant-tertiary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px">We help you shine</p>
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"700","letterSpacing":"2px"}},"textColor":"variant-accent-primary","fontSize":"text-xxs","paddingTop":1} -->
+<p class="has-variant-accent-primary-color has-text-color has-text-xxs-font-size pt__1" style="font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:2px">We help you shine</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"textColor":"variant-font-primary","fontSize":"text-xxl","paddingTop":5} -->
@@ -23,13 +23,13 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:ainoblocks/multiple-buttons {"paddingTop":7} -->
-<div class="wp-block-ainoblocks-multiple-buttons pt__7"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Try it now","backgroundColor":"variant-primary","textColor":"variant-button-color-primary"} -->
+<div class="wp-block-ainoblocks-multiple-buttons pt__7"><!-- wp:ainoblocks/button {"borderRadius":10,"label":"Try it now","backgroundColor":"variant-primary","textColor":"variant-button-color-primary"} -->
 <div class="wp-block-ainoblocks-button has-variant-button-color-primary-color has-variant-primary-background-color has-text-color has-background" style="border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px"><?php echo esc_html__('Try it now', 'soloarone'); ?></a></div>
 <!-- /wp:ainoblocks/button -->
 
 <!-- wp:ainoblocks/button {"textColor":"variant-primary","borderRadius":10,"label":"Learn more","className":"is-style-outline","style":{"spacing":{"margin":{"left":"1rem"}}}} -->
 <div class="wp-block-ainoblocks-button is-style-outline has-variant-primary-color has-text-color" style="margin-left:1rem;border-radius:10px"><a class="wp-block-ainoblocks-button__link size__m 10" style="border-radius:10px"><?php echo esc_html__('Learn more', 'soloarone'); ?></a></div>
-<!-- /wp:ainoblocks/button --></div></div>
+<!-- /wp:ainoblocks/button --></div>
 <!-- /wp:ainoblocks/multiple-buttons --></div>
 <!-- /wp:group -->
 </div>
