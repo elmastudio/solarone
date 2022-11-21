@@ -23,7 +23,7 @@ if ( ! function_exists( 'solarone_support' ) ) :
 		add_theme_support( 'wp-block-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style( 'assets/build/css/editor.css' );
+		add_editor_style( 'assets/build/css/style-editor.css' );
 
 		// Add support for editor styles.
 		add_theme_support( 'editor-styles' );
@@ -52,7 +52,7 @@ if ( ! function_exists( 'solarone_styles' ) ) :
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 		wp_register_style(
 			'solarone-style',
-			get_template_directory_uri() . '/assets/build/css/main.css',
+			get_template_directory_uri() . '/assets/build/css/style.css',
 			array(),
 			$version_string
 		);
@@ -76,13 +76,13 @@ function solarone_register_pattern_categories() {
 	$block_pattern_categories = array(
 		'heroes'       => array( 'label' => __( 'Heroes' ) ),
 		'features'     => array( 'label' => __( 'Features' ) ),
+		'ctas'         => array( 'label' => __( 'CTAs' ) ),
 		'teams'        => array( 'label' => __( 'Teams' ) ),
 		'testimonials' => array( 'label' => __( 'Testimonials' ) ),
 		'accordions'   => array( 'label' => __( 'Accordions' ) ),
 		'pricing'      => array( 'label' => __( 'Pricing' ) ),
 		'contact'      => array( 'label' => __( 'Contacts' ) ),
 		'posts'        => array( 'label' => __( 'Posts' ) ),
-		'banners'      => array( 'label' => __( 'Banners' ) ),
 		'texts'        => array( 'label' => __( 'Texts' ) ),
 		'newsletters'  => array( 'label' => __( 'Newsletters' ) ),
 		'header'       => array( 'label' => __( 'Headers' ) ),

@@ -1,7 +1,6 @@
 {
-	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json",
-	"version": 2,
 	"settings": {
+		"useRootPaddingAwareAlignments": true,
 		"appearanceTools": true,
 		"border": {
 			"color": true,
@@ -11,6 +10,100 @@
 		},
 		"spacing": {
 			"blockGap": true,
+			"spacingScale": {
+				"steps": 0
+			},"spacingSizes": [
+				{
+					"size": "clamp(0.125rem, 0.0746rem + 0.2193vw, 0.25rem)",
+					"slug": "1",
+					"name": "4px"
+				},
+				{
+					"size": "clamp(0.25rem, 0.1491rem + 0.4386vw, 0.5rem)",
+					"slug": "2",
+					"name": "8px"
+				},
+				{
+					"size": "clamp(0.375rem, 0.2237rem + 0.6579vw, 0.75rem)",
+					"slug": "3",
+					"name": "12px"
+				},
+				{
+					"size": "clamp(0.5rem, 0.2982rem + 0.8772vw, 1rem)",
+					"slug": "4",
+					"name": "16px"
+				},
+				{
+					"size": "clamp(1rem, 0.9167rem + 0.4167vw, 1.25rem)",
+					"slug": "5",
+					"name": "20px"
+				},
+				{
+					"size": "clamp(1rem, 0.7982rem + 0.8772vw, 1.5rem)",
+					"slug": "6",
+					"name": "24px"
+				},
+				{
+					"size": "cclamp(1rem, 0.5965rem + 1.7544vw, 2rem)",
+					"slug": "7",
+					"name": "32px"
+				},
+				{
+					"size": "clamp(1.25rem, 0.7456rem + 2.193vw, 2.5rem)",
+					"slug": "8",
+					"name": "40px"
+				},
+				{
+					"size": "clamp(1.5rem, 0.8947rem + 2.6316vw, 3rem)",
+					"slug": "9",
+					"name": "48px"
+				},
+				{
+					"size": "clamp(2rem, 1.193rem + 3.5088vw, 4rem)",
+					"slug": "10",
+					"name": "64px"
+				},
+				{
+					"size": "clamp(2.5rem, 1.4912rem + 4.386vw, 5rem)",
+					"slug": "11",
+					"name": "80px"
+				},
+				{
+					"size": "clamp(3rem, 1.7895rem + 5.2632vw, 6rem)",
+					"slug": "12",
+					"name": "96px"
+				},
+				{
+					"size": "clamp(4rem, 2.5877rem + 6.1404vw, 7.5rem)",
+					"slug": "13",
+					"name": "120px"
+				},
+				{
+					"size": "clamp(1rem, 0.9167rem + 0.4167vw, 1.25rem)",
+					"slug": "14",
+					"name": "144px"
+				},
+				{
+					"size": "clamp(6rem, 3.9825rem + 8.7719vw, 11rem)",
+					"slug": "15",
+					"name": "176px"
+				},
+				{
+					"size": "clamp(7.5rem, 5.2807rem + 9.6491vw, 13rem)",
+					"slug": "16",
+					"name": "208px"
+				},
+				{
+					"size": "clamp(9rem, 6.3772rem + 11.4035vw, 15.5rem)",
+					"slug": "17",
+					"name": "248px"
+				},
+				{
+					"size": "clamp(11rem, 8.1754rem + 12.2807vw, 18rem)",
+					"slug": "18",
+					"name": "288px"
+				}
+			],
 			"units": ["px", "em", "rem", "%", "vh", "vw"]
 		},
 		"color": {
@@ -18,165 +111,196 @@
 			"defaultGradients": false,
 			"link": true,
 			"custom": true,
-			"palette": [{
+			"palette": [
+				{
 					"slug": "background-primary",
-					"name": "Background 1",
-					"color": "#ffffff"
+					"color": "#ffffff",
+					"name": "Background Primary"
 				},
 				{
 					"slug": "background-secondary",
 					"color": "#F4F4F5",
-					"name": "Background 2"
+					"name": "Background Secondary"
 				},
 				{
 					"slug": "background-tertiary",
 					"color": "#ffffff",
-					"name": "Background 3"
+					"name": "Background Tertiary"
 				},
 				{
 					"slug": "background-quarternary",
 					"color": "#ffffff",
-					"name": "Background 4"
+					"name": "Background Quartenary"
+				},
+				{
+					"slug": "background-quinary",
+					"color": "rgba(0, 0, 0, 0.05)",
+					"name": "Background Quinary"
 				},
 				{
 					"slug": "font-primary",
 					"color": "#17191F",
-					"name": "Text 1"
+					"name": "Text Primary"
 				},
 				{
 					"slug": "font-secondary",
 					"color": "#323232",
-					"name": "Text 2"
+					"name": "Text Secondary"
 				},
 				{
 					"slug": "font-tertiary",
-					"color": "#121212",
-					"name": "Text 3"
-				},
-				{
-					"slug": "border-primary",
-					"color": "#909090",
-					"name": "Neutral 1"
-				},
-				{
-					"slug": "border-secondary",
-					"color": "#dddddd",
-					"name": "Neutral 2"
-				},
-				{
-					"slug": "tertiary",
-					"color": "#044FE7",
-					"name": "Accent 1"
-				},
-				{
-					"slug": "quarternary",
-					"color": "#00B6AF",
-					"name": "Accent 2"
-				},
-				{
-					"slug": "quinary",
-					"color": "#7761FF",
-					"name": "Accent 3"
-				},
-				{
-					"slug": "primary",
-					"color": "#121212",
-					"name": "Button Background"
-				},
-				{
-					"slug": "secondary",
-					"color": "#00CCAD",
-					"name": "Button Background Hover"
+					"color": "#7A7A7A",
+					"name": "Text Tertiary"
 				},
 				{
 					"slug": "button-color-primary",
 					"color": "#ffffff",
-					"name": "Button Text"
+					"name": "Text on*"
+				},
+				{
+					"slug": "border-primary",
+					"color": "#909090",
+					"name": "Border Primary"
+				},
+				{
+					"slug": "border-secondary",
+					"color": "#dddddd",
+					"name": "Border Secondary"
+				},
+				{
+					"slug": "primary",
+					"color": "#121212",
+					"name": "Brand Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#2c2c2c",
+					"name": "Brand Secondary"
 				},
 				{
 					"slug": "button-color-secondary",
+					"color": "rgba(18, 18, 18, 0.2)",
+					"name": "Brand Tertiary"
+				},
+				{
+					"slug": "accent-primary",
+					"color": "#044FE7",
+					"name": "Accent Primary"
+				},
+				{
+					"slug": "accent-secondary",
+					"color": "#00B6AF",
+					"name": "Accent Secondary"
+				},
+				{
+					"slug": "accent-tertiary",
+					"color": "#7761FF",
+					"name": "Accent Tertiary"
+				},
+				{
+					"slug": "input-background",
 					"color": "#ffffff",
-					"name": "Button Text Hover"
+					"name": "Input Background"
+				},
+				{
+					"slug": "input-border",
+					"color": "#B3B3B3",
+					"name": "Input Border"
 				},
 				{
 					"slug": "variant-background-primary",
 					"color": "#121212",
-					"name": "Variant Background 1"
+					"name": "Variant Background Primary"
 				},
 				{
 					"slug": "variant-background-secondary",
 					"color": "#1C1C1E",
-					"name": "Variant Background 2"
+					"name": "Variant Background Secondary"
 				},
 				{
 					"slug": "variant-background-tertiary",
 					"color": "#1C1C1E",
-					"name": "Variant Background 3"
+					"name": "Variant Background Tertiary"
 				},
 				{
 					"slug": "variant-background-quarternary",
 					"color": "#1C1C1E",
-					"name": "Variant Background 4"
+					"name": "Variant Background Quartenary"
+				},
+				{
+					"slug": "variant-background-quinary",
+					"color": "rgba(255, 255, 255, 0.05)",
+					"name": "Variant Background Quinary"
 				},
 				{
 					"slug": "variant-font-primary",
 					"color": "#FFFFFF",
-					"name": "Variant Text 1"
+					"name": "Variant Text Primary"
 				},
 				{
 					"slug": "variant-font-secondary",
 					"color": "#A0A0A3",
-					"name": "Variant Text 2"
+					"name": "Variant Text Secondary"
 				},
 				{
 					"slug": "variant-font-tertiary",
-					"color": "#A0A0A3",
-					"name": "Variant Text 3"
+					"color": "#707072",
+					"name": "Variant Text Tertiary"
+				},
+				{
+					"slug": "variant-button-color-primary",
+					"color": "#121212",
+					"name": "Variant Text on*"
 				},
 				{
 					"slug": "variant-border-primary",
 					"color": "#FFFFFF",
-					"name": "Variant Neutral 1"
+					"name": "Variant Border Primary"
 				},
 				{
 					"slug": "variant-border-secondary",
 					"color": "#383838",
-					"name": "Variant Neutral 2"
-				},
-				{
-					"slug": "variant-tertiary",
-					"color": "#6298FF",
-					"name": "Variant Accent 1"
-				},
-				{
-					"slug": "variant-quarternary",
-					"color": "#A2FFFB",
-					"name": "Variant Accent 2"
-				},
-				{
-					"slug": "variant-quinary",
-					"color": "#BBAFFF",
-					"name": "Variant Accent 3"
+					"name": "Variant Border Secondary"
 				},
 				{
 					"slug": "variant-primary",
 					"color": "#ffffff",
-					"name": "Variant Button Background"
+					"name": "Variant Brand Primary"
 				},
 				{
 					"slug": "variant-secondary",
-					"color": "#72FFEA",
-					"name": "Variant Button Background Hover"
-				},
-				{
-					"slug": "variant-button-color-primary",
-					"color": "#17191F",
-					"name": "Variant Button Text"
+					"color": "#f2f2f2",
+					"name": "Variant Brand Secondary"
 				},
 				{
 					"slug": "variant-button-color-secondary",
-					"color": "#121212",
-					"name": "Variant Button Text Hover"
+					"color": "rgba(255, 255, 255, 0.2)",
+					"name": "Variant Brand Tertiary"
+				},
+				{
+					"slug": "variant-accent-primary",
+					"color": "#6298FF",
+					"name": "Variant Accent Primary"
+				},
+				{
+					"slug": "variant-accent-secondary",
+					"color": "#A2FFFB",
+					"name": "Variant Accent Secondary"
+				},
+				{
+					"slug": "variant-accent-tertiary",
+					"color": "#BBAFFF",
+					"name": "Variant Accent Tertiary"
+				},
+				{
+					"slug": "variant-input-background",
+					"color": "#1E1E1E",
+					"name": "Variant Input Background"
+				},
+				{
+					"slug": "variant-input-border",
+					"color": "#444444",
+					"name": "Variant Input Border"
 				}
 			],
 			"gradients": [{
@@ -201,7 +325,107 @@
 			"wideSize": "112.5rem"
 		},
 		"typography": {
-			"fontFamilies": [{
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Work Sans\", sans-serif",
+					"name": "Work Sans",
+					"slug": "work-sans",
+					"fontFace": [{
+						"fontFamily": "Work Sans",
+						"fontWeight": "100 900",
+						"fontStyle": "normal",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/WorkSans-VariableFont_wght.woff2"
+						]
+					}]
+				},
+				{
+					"fontFamily": "\"Inter\", sans-serif",
+					"slug": "inter",
+					"name": "Inter",
+					"fontFace": [{
+						"fontFamily": "Inter",
+						"fontWeight": "200 900",
+						"fontStyle": "normal",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/Inter.woff2"
+						]
+					}]
+				},
+				{
+					"fontFamily": "\"Libre Franklin\", sans-serif",
+					"slug": "libre-franklin",
+					"name": "Libre Franklin",
+					"fontFace": [{
+						"fontFamily": "Libre Franklin",
+						"fontWeight": "200 900",
+						"fontStyle": "normal",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/LibreFranklin-VariableFont.woff2"
+						]
+					}]
+				},
+				{
+					"fontFamily": "\"Urbanist\", sans-serif",
+					"slug": "urbanist",
+					"name": "Urbanist",
+					"fontFace": [{
+						"fontFamily": "Urbanist",
+						"fontWeight": "200 900",
+						"fontStyle": "normal",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/Urbanist-VariableFont.woff2"
+						]
+					}]
+				},
+				{
+					"fontFamily": "\"Fraunces\", serif",
+					"slug": "fraunces",
+					"name": "Fraunces",
+					"fontFace": [{
+						"fontFamily": "Fraunces",
+						"fontWeight": "200 900",
+						"fontStyle": "normal",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/Fraunces-VariableFont.woff2"
+						]
+					}]
+				},
+				{
+					"fontFamily": "\"Fraunces\", serif",
+					"slug": "fraunces",
+					"name": "Fraunces",
+					"fontFace": [{
+						"fontFamily": "Fraunces",
+						"fontWeight": "200 900",
+						"fontStyle": "italic",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/Fraunces-Italic-VariableFont.woff2"
+						]
+					}]
+				},
+				{
+					"fontFamily": "\"Ibarra Real Nova\", serif",
+					"slug": "ibarra-real-nova",
+					"name": "Ibarra Real Nova",
+					"fontFace": [{
+						"fontFamily": "Ibarra Real Nova",
+						"fontWeight": "400 700",
+						"fontStyle": "normal",
+						"fontStretch": "normal",
+						"src": [
+							"file:./assets/fonts/IbarraRealNova-VariableFont.woff2"
+						]
+					}]
+				},
+				{
 					"fontFamily": "\"Epilogue\", sans-serif",
 					"slug": "epilogue",
 					"name": "Epilogue",
@@ -227,78 +451,123 @@
 				}
 			],
 			"fontSizes": [{
-					"name": "3XS",
+				"name": "3XS",
 					"size": "0.75rem",
+					"fluid": false,
 					"slug": "text-xxxs"
 				},
 				{
 					"name": "2XS",
 					"size": "0.875rem",
+					"fluid": false,
 					"slug": "text-xxs"
 				},
 				{
 					"name": "XS",
 					"size": "1rem",
+					"fluid": false,
 					"slug": "text-xs"
 				},
 				{
 					"name": "S",
 					"size": "1.125rem",
+					"fluid": false,
 					"slug": "text-s"
 				},
 				{
 					"name": "M",
-					"size": "clamp(1.125rem, 1.08333rem + 0.208333vw, 1.25rem)",
+					"size": "1.25rem",
+					"fluid": false,
 					"slug": "text-m"
 				},
 				{
 					"name": "L",
-					"size": "clamp(1.25rem, 1.16667rem + 0.416667vw, 1.5rem)",
+					"size": "1.5rem",
+					"fluid": {
+						"min": "1.25rem",
+						"max": "1.5rem"
+					},
 					"slug": "text-l"
 				},
 				{
 					"name": "XL",
-					"size": "clamp(1.5rem, 1.375rem + 0.625vw, 1.875rem)",
+					"size": "1.875rem",
+					"fluid": {
+						"min": "1.5rem",
+						"max": "1.875rem"
+					},
 					"slug": "text-xl"
 				},
 				{
 					"name": "XXL",
-					"size": "clamp(1.875rem, 1.75rem + 0.625vw, 2.25rem)",
+					"size": "2.25rem",
+					"fluid": {
+						"min": "1.875rem",
+						"max": "2.25rem"
+					},
 					"slug": "text-xxl"
 				},
 				{
 					"name": "3XL",
-					"size": "clamp(2.25rem, 2rem + 1.25vw, 3rem)",
+					"size": "3rem",
+					"fluid": {
+						"min": "2.25rem",
+						"max": "3rem"
+					},
 					"slug": "text-xxxl"
 				},
 				{
 					"name": "4XL",
-					"size": "clamp(2.25rem, 1.75rem + 2.5vw, 3.75rem)",
+					"size": "3.75rem",
+					"fluid": {
+						"min": "2.25rem",
+						"max": "3.75rem"
+					},
 					"slug": "text-4-xl"
 				},
 				{
 					"name": "5XL",
-					"size": "clamp(3rem, 2.5rem + 2.5vw, 4.5rem)",
+					"size": "4.5rem",
+					"fluid": {
+						"min": "2.25rem",
+						"max": "4.5rem"
+					},
 					"slug": "text-5-xl"
 				},
 				{
 					"name": "6XL",
-					"size": "clamp(3.75rem, 3rem + 3.75vw, 6rem)",
+					"size": "6rem",
+					"fluid": {
+						"min": "3rem",
+						"max": "6rem"
+					},
 					"slug": "text-6-xl"
 				},
 				{
 					"name": "7XL",
-					"size": "clamp(4.5rem, 3.333rem + 5.8333vw, 8rem)",
+					"size": "8rem",
+					"fluid": {
+						"min": "3.75rem",
+						"max": "8rem"
+					},
 					"slug": "text-7-xl"
 				},
 				{
 					"name": "8XL",
-					"size": "clamp(6rem, 4rem + 10vw, 12rem)",
+					"size": "12rem",
+					"fluid": {
+						"min": "4.5rem",
+						"max": "12rem"
+					},
 					"slug": "text-8-xl"
 				},
 				{
 					"name": "9XL",
-					"size": "clamp(6rem, 1.8333rem + 20.8333vw, 18.5rem)",
+					"size": "18.5rem",
+					"fluid": {
+						"min": "6rem",
+						"max": "18.5rem"
+					},
 					"slug": "text-9-xl"
 				}
 			],
@@ -340,12 +609,17 @@
 	},
 	"styles": {
 		"spacing": {
-			"blockGap": "0.0rem"
+			"blockGap": "0.0rem",
+			"padding": {
+				"top": "0px",
+				"right": "var(--wp--preset--spacing--9)",
+				"bottom": "0px",
+				"left": "var(--wp--preset--spacing--9)"
+			}
 		},
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-xxxl)"
 				},
 				"color": {
@@ -354,7 +628,6 @@
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-xxl)"
 				},
 				"color": {
@@ -363,7 +636,6 @@
 			},
 			"h3": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-xl)"
 				},
 				"color": {
@@ -372,7 +644,6 @@
 			},
 			"h4": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-l)"
 				},
 				"color": {
@@ -381,7 +652,6 @@
 			},
 			"h5": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-m)"
 				},
 				"color": {
@@ -390,7 +660,6 @@
 			},
 			"h6": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--epilogue)",
 					"fontSize": "var(--wp--preset--font-size--text-s)"
 				},
 				"color": {
@@ -399,7 +668,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--epilogue)",
+			"fontFamily": "var(--wp--preset--font-family--inter)",
 			"lineHeight": "var(--wp--custom--line-height--body)",
 			"fontSize": "var(--wp--preset--font-size--text-m)",
 			"fontWeight": "400"
@@ -442,12 +711,6 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--monospace)",
 					"fontSize": "var(--wp--preset--font-size--text-s)"
-				}
-			},
-			"ainoblocks/button": {
-				"color": {
-					"background": "var(--wp--preset--color--primary)",
-					"text": "var(--wp--preset--color--button-color-primary)"
 				}
 			}
 		}
@@ -497,10 +760,14 @@
 			"area": "footer"
 		},
 		{
-			"name": "single-related-posts"
+			"name": "single-related-posts",
+			"area": "uncategorized"
 		},
 		{
-			"name": "banner"
+			"name": "banner",
+			"area": "uncategorized"
 		}
-	]
+	],
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json",
+	"version": 2
 }

@@ -2,7 +2,7 @@
 /**
  * Title: Banner wide (variant)
  * Slug: solarone/banner-wide-variant
- * Categories: banners
+ * Categories: ctas
  */
 ?>
 
@@ -23,10 +23,10 @@
 
 <!-- wp:ainoblocks/flex-item {"flexShrink":true} -->
 <div class="wp-block-ainoblocks-flex-item auto" style="flex-shrink:0"><!-- wp:ainoblocks/multiple-buttons {"paddingTop":0} -->
-<div class="wp-block-ainoblocks-multiple-buttons"><div class="wp-block-ainoblocks-multiple-buttons__inner"><!-- wp:ainoblocks/button {"borderRadius":9,"label":"Talk to us today","backgroundColor":"primary","textColor":"button-color-primary","className":"is-style-primary"} -->
+<div class="wp-block-ainoblocks-multiple-buttons"><!-- wp:ainoblocks/button {"borderRadius":9,"label":"Talk to us today","backgroundColor":"primary","textColor":"button-color-primary","className":"is-style-primary"} -->
 <div class="wp-block-ainoblocks-button is-style-primary has-button-color-primary-color has-primary-background-color has-text-color has-background" style="border-radius:9px"><a class="wp-block-ainoblocks-button__link size__m 9" href="#" style="border-radius:9px"><?php echo esc_html__('Talk to us today', 'soloarone'); ?></a></div>
 <!-- /wp:ainoblocks/button -->
-</div></div>
+</div>
 <!-- /wp:ainoblocks/multiple-buttons --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
 <!-- /wp:ainoblocks/flexbox --></div>
