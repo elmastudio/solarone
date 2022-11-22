@@ -3,7 +3,7 @@ Contributors: elmastudio
 Requires at least: 6.1
 Tested up to: WordPress 6.1.1
 Requires PHP: 7.0
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,9 +32,7 @@ GNU General Public License for more details.
 
 == Resources ==
 
-SolarOne WordPress theme bundles the following third-party resources:
-
-* TGM-Plugin-Activation, (c) Thomas Griffin, License: GPLv2 or later, http://tgmpluginactivation.com
+This theme bundles the following third-party resources:
 
 Work Sans (font)
 Copyright 2019 The Work Sans Project Authors
@@ -76,7 +74,22 @@ Copyright 2021 The Spline Sans Project Authors
 License: SIL Open Font License, 1.1, http://scripts.sil.org/OFL
 Source: (https://github.com/SorkinType/SplineSans)
 
+TGM-Plugin-Activation (Recommended plugin admin info)
+Copyright Thomas Griffin
+License: GPLv2 or later, http://www.gnu.org/licenses/gpl-2.0.html
+Source: http://tgmpluginactivation.com
+
+Merlin WP (Demo Import)
+Copyright Rich Tabor
+License: GPLv3 or later, https://www.gnu.org/licenses/gpl-3.0.html
+Source: https://github.com/richtabor/MerlinWP
+
 == Changelog ==
+
+= 1.5.1 =
+* Released: November 22, 2022
+
+* Enhance: Demo import via Merlin WP.
 
 = 1.5.0 =
 * Released: November 21, 2022
