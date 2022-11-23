@@ -93,6 +93,7 @@ Source: https://github.com/richtabor/MerlinWP
 * Fix: Rename color button-color-secondary to tertiary.
 * Fix: Rename color variant-button-color-secondary to variant-tertiary.
 * Fix: Index template.
+* Fix: Banner tempalte part.
 
 = 1.5.1 =
 * Released: November 22, 2022
