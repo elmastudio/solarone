@@ -322,6 +322,15 @@ class Merlin {
 	}
 
 	/**
+	 * Set redirection transient on theme switch.
+	 */
+	public function switch_theme() {
+		if ( ! is_child_theme() ) {
+			set_transient( $this->theme->template . '_merlin_redirect', 1 );
+		}
+	}
+
+	/**
 	 * Redirection transient.
 	 */
 	public function redirect() {
