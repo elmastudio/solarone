@@ -178,7 +178,7 @@
 					"name": "Brand Secondary"
 				},
 				{
-					"slug": "button-color-secondary",
+					"slug": "tertiary",
 					"color": "rgba(18, 18, 18, 0.2)",
 					"name": "Brand Tertiary"
 				},
@@ -196,6 +196,26 @@
 					"slug": "accent-tertiary",
 					"color": "#7761FF",
 					"name": "Accent Tertiary"
+				},
+				{
+					"slug": "neutral-primary",
+					"color": "#383838",
+					"name": "Neutral Primary"
+				},
+				{
+					"slug": "neutral-secondary",
+					"color": "#1E1E1E",
+					"name": "Neutral Secondary"
+				},
+				{
+					"slug": "neutral-tertiary",
+					"color": "#F5F5F5",
+					"name": "Neutral Tertiary"
+				},
+				{
+					"slug": "neutral-quarternary",
+					"color": "#D9D9D9",
+					"name": "Neutral Quarternary"
 				},
 				{
 					"slug": "input-background",
@@ -273,7 +293,7 @@
 					"name": "Variant Brand Secondary"
 				},
 				{
-					"slug": "variant-button-color-secondary",
+					"slug": "variant-tertiary",
 					"color": "rgba(255, 255, 255, 0.2)",
 					"name": "Variant Brand Tertiary"
 				},
@@ -291,6 +311,26 @@
 					"slug": "variant-accent-tertiary",
 					"color": "#BBAFFF",
 					"name": "Variant Accent Tertiary"
+				},
+				{
+					"slug": "variant-neutral-primary",
+					"color": "#D9D9D9",
+					"name": "Variant Neutral Primary"
+				},
+				{
+					"slug": "variant-neutral-secondary",
+					"color": "#FFFFFF",
+					"name": "Variant Neutral Secondary"
+				},
+				{
+					"slug": "variant-neutral-tertiary",
+					"color": "#2C2C2C",
+					"name": "Variant Neutral Tertiary"
+				},
+				{
+					"slug": "variant-neutral-quarternary",
+					"color": "#383838",
+					"name": "Variant Neutral Quarternary"
 				},
 				{
 					"slug": "variant-input-background",
