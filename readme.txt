@@ -3,7 +3,7 @@ Contributors: elmastudio
 Requires at least: 6.1
 Tested up to: WordPress 6.1.1
 Requires PHP: 7.0
-Stable tag: 1.5.1
+Stable tag: 1.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,15 @@ License: GPLv3 or later, https://www.gnu.org/licenses/gpl-3.0.html
 Source: https://github.com/richtabor/MerlinWP
 
 == Changelog ==
+
+= 1.5.2 =
+* Released: November 23, 2022
+
+* New: Neutral color palette.
+* Fix: Rename color button-color-secondary to tertiary.
+* Fix: Rename color variant-button-color-secondary to variant-tertiary.
+* Fix: Index template.
+* Fix: Banner tempalte part.
 
 = 1.5.1 =
 * Released: November 22, 2022
