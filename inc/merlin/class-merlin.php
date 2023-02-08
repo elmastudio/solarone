@@ -812,9 +812,9 @@ class Merlin {
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
-		$plugin_slug = 'woocommerce';
-		$plugin_file = 'woocommerce.php';
-		$plugin_name = 'WooCommerce';
+		$plugin_slug = 'aino-blocks';
+		$plugin_file = 'ainoblocks.php';
+		$plugin_name = 'AinoBlocks – Gutenberg Website Builder Blocks';
 
 		// Text strings.
 		$header    = ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) ? $strings['plugins-header-success'] : $strings['plugins-header'];
