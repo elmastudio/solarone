@@ -388,6 +388,8 @@ class Merlin {
 	 */
 	public function admin_page() {
 
+		$pagenow = isset( $pagenow ) ? $pagenow : 'themes';
+
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
@@ -409,11 +411,29 @@ class Merlin {
 		wp_enqueue_style( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/css/merlin' . $suffix . '.css', array( 'wp-admin' ), MERLIN_VERSION );
 
 		// Enqueue javascript.
-		wp_enqueue_script( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/js/merlin' . $suffix . '.js', array( 'jquery-core' ), MERLIN_VERSION );
+		wp_enqueue_script( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/js/merlin' . $suffix . '.js', array( 'jquery-core', 'updates' ), MERLIN_VERSION );
 
 		$texts = array(
-			'something_went_wrong' => esc_html__( 'Something went wrong. Please refresh the page and try again!', 'solarone' ),
+			'something_went_wrong' => esc_html__( 'Something went wrong. Please refresh the page and try again!', 'basti' ),
+			'next'                 => $strings['btn-next'],
+			'activating'           => $strings['btn-plugins-activate'],
+			'importing'            => $strings['btn-content-importing'],
+			'installing'           => $strings['btn-child-installing'],
+			'try_again'            => $strings['btn-try-again'],
+			'plugin_success'       => $strings['plugins-success%s'],
+			'plugin_install_error' => $strings['plugins-install-error%s'],
 		);
+
+		// Localize the javascript.
+			wp_localize_script(
+				'merlin', 'merlin_params', array(
+					'ajaxurl' => admin_url( 'admin-ajax.php' ),
+					'wpnonce' => wp_create_nonce( 'merlin_nonce' ),
+					'texts'   => $texts,
+					'pagenow'   => $pagenow,
+					'next_link' => $this->step_next_link(),
+				)
+			);
 
 		ob_start();
 
@@ -652,6 +672,16 @@ class Merlin {
 			),
 		);
 
+		// $this->steps['child'] = array(
+		// 	'name' => esc_html__( 'Child', 'solarone' ),
+		// 	'view' => array( $this, 'child' ),
+		// );
+
+		$this->steps['plugins'] = array(
+			'name' => esc_html__( 'Plugins', 'solarone' ),
+			'view' => array( $this, 'plugins' ),
+			);
+
 		// Show the content importer, only if there's demo content added.
 		if ( ! empty( $this->import_files ) ) {
 			$this->steps['content'] = array(
@@ -777,50 +807,18 @@ class Merlin {
 		return false;
 	}
 
-	/**
-	 * Theme plugins
-	 */
 	protected function plugins() {
-
-		// Variables.
-		$url    = wp_nonce_url( add_query_arg( array( 'plugins' => 'go' ) ), 'merlin' );
-		$method = '';
-		$fields = array_keys( $_POST );
-		$creds  = request_filesystem_credentials( esc_url_raw( $url ), $method, false, false, $fields );
-
-		tgmpa_load_bulk_installer();
-
-		if ( false === $creds ) {
-			return true;
-		}
-
-		if ( ! WP_Filesystem( $creds ) ) {
-			request_filesystem_credentials( esc_url_raw( $url ), $method, true, false, $fields );
-			return true;
-		}
-
-		// Are there plugins that need installing/activating?
-		$plugins          = $this->get_tgmpa_plugins();
-		$required_plugins = $recommended_plugins = array();
-		$count            = count( $plugins['all'] );
-		$class            = $count ? null : 'no-plugins';
-
-		// Split the plugins into required and recommended.
-		foreach ( $plugins['all'] as $slug => $plugin ) {
-			if ( ! empty( $plugin['required'] ) ) {
-				$required_plugins[ $slug ] = $plugin;
-			} else {
-				$recommended_plugins[ $slug ] = $plugin;
-			}
-		}
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
+		$plugin_slug = 'woocommerce';
+		$plugin_file = 'woocommerce.php';
+		$plugin_name = 'WooCommerce';
+
 		// Text strings.
-		$header    = $count ? $strings['plugins-header'] : $strings['plugins-header-success'];
-		$paragraph = $count ? $strings['plugins'] : $strings['plugins-success%s'];
-		$action    = $strings['plugins-action-link'];
+		$header    = ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) ? $strings['plugins-header-success'] : $strings['plugins-header'];
+		$paragraph = ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) ? $strings['plugins-success%s'] : $strings['plugins'];
 		$skip      = $strings['btn-skip'];
 		$next      = $strings['btn-next'];
 		$install   = $strings['btn-plugins-install'];
@@ -828,80 +826,34 @@ class Merlin {
 
 		<div class="merlin__content--transition">
 
-			<?php echo wp_kses( $this->svg( array( 'icon' => 'plugins' ) ), $this->svg_allowed_html() ); ?>
+		<svg xmlns="http://www.w3.org/2000/svg" class="theme-icon icon" width="150" height="150" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M212,132l-57.4,57.4a31.9,31.9,0,0,1-45.2,0L66.6,146.6a31.9,31.9,0,0,1,0-45.2L124,44" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path><line x1="88" y1="168" x2="32" y2="224" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line><line x1="144" y1="64" x2="184" y2="24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line><line x1="232" y1="72" x2="192" y2="112" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line><line x1="224" y1="144" x2="112" y2="32" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line></svg>
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
 			</svg>
 
-			<h1><?php echo esc_html( $header ); ?></h1>
+			<h2><?php echo esc_html( $header ); ?></h2>
 
-			<p><?php echo esc_html( $paragraph ); ?></p>
-
-			<?php if ( $count ) { ?>
-				<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html( $action ); ?></span><span class="chevron"></span></a>
-			<?php } ?>
+			<p id="plugin-text"><?php echo esc_html( $paragraph ); ?></p>
 
 		</div>
 
 		<form action="" method="post">
 
-			<?php if ( $count ) : ?>
-
-				<ul class="merlin__drawer merlin__drawer--install-plugins">
-
-				<?php if ( ! empty( $required_plugins ) ) : ?>
-					<?php foreach ( $required_plugins as $slug => $plugin ) : ?>
-						<li data-slug="<?php echo esc_attr( $slug ); ?>">
-							<input type="checkbox" name="default_plugins[<?php echo esc_attr( $slug ); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr( $slug ); ?>" value="1" checked>
-
-							<label for="default_plugins_<?php echo esc_attr( $slug ); ?>">
-								<i></i>
-
-								<span><?php echo esc_html( $plugin['name'] ); ?></span>
-
-								<span class="badge">
-									<span class="hint--top" aria-label="<?php esc_html_e( 'Required', 'solarone' ); ?>">
-										<?php esc_html_e( 'req', 'solarone' ); ?>
-									</span>
-								</span>
-							</label>
-						</li>
-					<?php endforeach; ?>
-				<?php endif; ?>
-
-				<?php if ( ! empty( $recommended_plugins ) ) : ?>
-					<?php foreach ( $recommended_plugins as $slug => $plugin ) : ?>
-						<li data-slug="<?php echo esc_attr( $slug ); ?>">
-							<input type="checkbox" name="default_plugins[<?php echo esc_attr( $slug ); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr( $slug ); ?>" value="1" checked>
-
-							<label for="default_plugins_<?php echo esc_attr( $slug ); ?>">
-								<i></i><span><?php echo esc_html( $plugin['name'] ); ?></span>
-							</label>
-						</li>
-					<?php endforeach; ?>
-				<?php endif; ?>
-
-				</ul>
-
-			<?php endif; ?>
-
-			<footer class="merlin__content__footer <?php echo esc_attr( $class ); ?>">
-				<?php if ( $count ) : ?>
+			<footer class="merlin__content__footer">
+				<?php if ( ! is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) : ?>
 					<a id="close" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--closer merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
 					<a id="skip" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
-					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next button-next" data-callback="install_plugins">
-						<span class="merlin__button--loading__text"><?php echo esc_html( $install ); ?></span>
-						<?php echo wp_kses( $this->loading_spinner(), $this->loading_spinner_allowed_html() ); ?>
-					</a>
+					<?php $this->install_plugin_button( $plugin_slug, $plugin_file, $plugin_name, array(), _x( 'Next', 'Theme notification', 'solarone' ), _x( 'Activate', 'Theme notification', 'solarone' ), _x( 'Install', 'Theme notification', 'solarone' ) ); ?>
 				<?php else : ?>
-					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $next ); ?></a>
+					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed"><?php echo esc_html( $next ); ?></a>
 				<?php endif; ?>
 				<?php wp_nonce_field( 'merlin' ); ?>
+
 			</footer>
 		</form>
 
-	<?php
+		<?php
 	}
 
 	/**
