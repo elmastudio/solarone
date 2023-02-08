@@ -8,6 +8,18 @@
  * @since SolarOne 1.0.0
  */
 
+if ( !defined( 'SOLARONE_THEME_VERSION' ) ) {
+	define('GREENSHIFT_THEME_VERSION', '1.5.4');
+}
+if ( !defined( 'SOLARONE_THEME_DIR' ) ) {
+	define('SOLARONE_THEME_DIR', get_template_directory_uri());
+}
+if ( !defined( 'SOLARONE_THEME_PATH' ) ) {
+	define('SOLARONE_THEME_PATH', get_template_directory());
+}
+add_filter( 'should_load_separate_core_block_assets', '__return_true' );
+
+
 if ( ! function_exists( 'solarone_support' ) ) :
 
 	/**
