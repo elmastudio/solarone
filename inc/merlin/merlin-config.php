@@ -16,6 +16,7 @@ if ( ! class_exists( 'Merlin' ) ) {
 		'merlin_url'           => 'merlin', // The wp-admin page slug where Merlin WP loads.
 		'parent_slug'          => 'themes.php', // The wp-admin parent page slug for the admin menu item.
 		'capability'           => 'manage_options', // The capability required for this menu to be displayed to the user.
+		'child_action_btn_url' => 'https://codex.wordpress.org/child_themes', // URL for the 'child-action-link'.
 		'dev_mode'             => true, // Enable development mode for testing.
 		'ready_big_button_url' => home_url( '/' ), // Link for the big button on the ready step.
 	);
@@ -35,6 +36,8 @@ if ( ! class_exists( 'Merlin' ) ) {
 		'btn-no'                   => esc_html__( 'Cancel', 'solarone' ),
 		'btn-plugins-install'      => esc_html__( 'Install', 'solarone' ),
 		'btn-plugins-activate'     => esc_html__( 'Activating...', 'solarone' ),
+		'btn-child-install'        => esc_html__( 'Install', 'solarone' ),
+		'btn-child-installing'     => esc_html__( 'Installing...', 'solarone' ),
 		'btn-content-install'      => esc_html__( 'Install', 'solarone' ),
 		'btn-import'               => esc_html__( 'Import', 'solarone' ),
 		'btn-content-importing'    => esc_html__( 'Importing...', 'solarone' ),
