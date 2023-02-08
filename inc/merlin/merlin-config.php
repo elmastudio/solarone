@@ -22,7 +22,7 @@ if ( ! class_exists( 'Merlin' ) ) {
 	);
 
 	$strings = array(
-		'admin-menu'               => esc_html__( 'Theme Demo Import', 'solarone' ),
+		'admin-menu'               => esc_html__( 'Theme Setup', 'solarone' ),
 
 		/* translators: 1: Title Tag 2: Theme Name 3: Closing Title Tag */
 		'title%s%s%s%s'            => esc_html__( '%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s', 'solarone' ),
