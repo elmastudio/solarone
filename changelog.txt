@@ -1,5 +1,31 @@
 *** Solarone changelog ***
 
+2023-02-09 - version 1.5.4.1
+
+- Fix: Delete unnedded demo folder.
+- Fix: Delete unnedded tgm plugin files.
+
+
+2023-02-08 - version 1.5.4
+
+- Fix: Remove unneeded style variations for fonts.
+- Fix: Theme setup workflow via WPMerlin.
+
+
+2023-02-07 - version 1.5.3
+
+- Fix: Demo import missed images.
+
+
+2022-11-23 - version 1.5.2
+
+- New: Neutral color palette.
+- Fix: Rename color button-color-secondary to tertiary.
+- Fix: Rename color variant-button-color-secondary to variant-tertiary.
+- Fix: Index template.
+- Fix: Banner template part.
+
+
 2022-11-24 - version 1.5.2.1
 
 - New: Google fonts Open Sans, DM Sans.
