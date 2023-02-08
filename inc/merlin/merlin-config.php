@@ -47,15 +47,15 @@ if ( ! class_exists( 'Merlin' ) ) {
 
 		'plugins-header'           => esc_html__( 'Install Plugins', 'solarone' ),
 		'plugins-header-success'   => esc_html__( 'You\'re up to speed!', 'solarone' ),
-		'plugins'                  => esc_html__( 'Let\'s install the recommended WordPress plugins to get your site up to speed.', 'solarone' ),
+		'plugins'                  => esc_html__( 'Install the recommended WordPress plugins to get your site up to speed.', 'solarone' ),
 		'plugins-success%s'        => esc_html__( 'The recommended WordPress plugins are all installed and up to date. Press "Next" to continue the setup wizard.', 'solarone' ),
 		'plugins-install-error%s'  => esc_html__( 'Installation failed: An unexpected error occurred. Something may be wrong with WordPress.org or this server\'s configuration.', 'solarone' ),
 		'plugins-activate-error%s' => esc_html__( 'Activation failed: An unexpected error occurred. Something may be wrong with WordPress.org or this server\'s configuration.', 'solarone' ),
 		'plugins-action-link'      => esc_html__( 'Advanced', 'solarone' ),
 
-		'import-header'            => esc_html__( 'Import Theme Demo Content', 'solarone' ),
-		'import'                   => esc_html__( 'Let\'s import the theme demo content to your website. This could take some minutes. Please wait.', 'solarone' ),
-		'import-demo-link'         => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://themes.ainoblocks.io/solarone/', esc_html__( 'Import Theme Demo Content', 'solarone' ) ),
+		'import-header'            => esc_html__( 'Import Demo', 'solarone' ),
+		'import'                   => esc_html__( 'Import the theme demo content to your website. This could take some minutes. Please wait.', 'solarone' ),
+		'import-demo-link'         => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://themes.ainoblocks.io/solarone/', esc_html__( 'View Demo', 'solarone' ) ),
 		'import-action-link'       => esc_html__( 'Advanced', 'solarone' ),
 
 		'ready-header'             => esc_html__( 'All done. Have fun!', 'solarone' ),
@@ -65,7 +65,6 @@ if ( ! class_exists( 'Merlin' ) ) {
 		'ready-action-link'        => esc_html__( 'Helpful resources', 'solarone' ),
 		'ready-big-button'         => esc_html__( 'View your website', 'solarone' ),
 		'ready-link-1'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://docs.ainoblocks.io/', esc_html__( 'Documentation', 'solarone' ) ),
-		'ready-link-2'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://ainoblocks.io/', esc_html__( 'Get Theme Support', 'solarone' ) ),
 		'ready-link-3'             => sprintf( '<a href="%1$s">%2$s</a>', admin_url( 'site-editor.php' ), esc_html__( 'Start Customizing', 'solarone' ) ),
 );
 
