@@ -52,7 +52,7 @@
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":7,"gridColumnStartTablet":1,"gridColumnEndTablet":6,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"marginTopTablet":0,"marginTopMobile":8,"borderRadius":"none"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__7 col_start_t__1 col_end_t__6 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking mt_t__0 mt_m__8 br-all__none"><!-- wp:image {"id":22319,"sizeSlug":"full","linkDestination":"none","className":"size-full is-style-default","borderRadius":"l"} -->
-<figure class="wp-block-image size-full is-style-default br-all__l"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/solarone-about.jpeg" alt="SolarOne WordPress FSE Block Theme"/></figure>
+<figure class="wp-block-image size-full is-style-default br-all__l"><img src="<?php echo SOLARONE_THEME_DIR . '/assets/images/solarone-about.jpeg'; ?>" alt="SolarOne WordPress FSE Block Theme"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:ainoblocks/grid-item --></div>
 <!-- /wp:ainoblocks/grid-container --></div>
