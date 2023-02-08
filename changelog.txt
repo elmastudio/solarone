@@ -1,0 +1,7 @@
+*** Solarone changelog ***
+
+2022-11-24 - version 1.5.2.1
+
+- New: Google fonts Open Sans, DM Sans.
+- New: Demo import wizard.
+- Enhance: functions file.
