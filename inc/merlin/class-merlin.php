@@ -7,11 +7,7 @@
  * Envato WordPress Theme Setup Wizard by David Baker.
  *
  * @package   Merlin WP
- * @version   @@pkg.version
- * @link      https://merlinwp.com/
- * @author    Rich Tabor, from ThemeBeans.com & the team at ProteusThemes.com
- * @copyright Copyright (c) 2018, Merlin WP of Inventionn LLC
- * @license   Licensed GPLv3 for Open Source Use
+ * @version   1.0.0
  */
 
 // Exit if accessed directly.
@@ -205,27 +201,27 @@ class Merlin {
 	 */
 	public $logger;
 
-	/**
+/**
 	 * Setup plugin version.
 	 *
-	 * @access private
 	 * @since 1.0
 	 * @return void
 	 */
 	private function version() {
 
 		if ( ! defined( 'MERLIN_VERSION' ) ) {
-			define( 'MERLIN_VERSION', '@@pkg.version' );
+			define( 'MERLIN_VERSION', '1.0.0' );
 		}
 	}
 
-	/**
+
+		/**
 	 * Class Constructor.
 	 *
 	 * @param array $config Package-specific configuration args.
 	 * @param array $strings Text for the different elements.
 	 */
-	function __construct( $config = array(), $strings = array() ) {
+	public function __construct( $config = array(), $strings = array() ) {
 
 		$this->version();
 
@@ -237,6 +233,7 @@ class Merlin {
 				'merlin_url'           => 'merlin',
 				'parent_slug'          => 'themes.php',
 				'capability'           => 'manage_options',
+				'child_action_btn_url' => '',
 				'dev_mode'             => '',
 				'ready_big_button_url' => home_url( '/' ),
 			)
@@ -249,6 +246,7 @@ class Merlin {
 		$this->merlin_url           = $config['merlin_url'];
 		$this->parent_slug          = $config['parent_slug'];
 		$this->capability           = $config['capability'];
+		$this->child_action_btn_url = $config['child_action_btn_url'];
 		$this->dev_mode             = $config['dev_mode'];
 		$this->ready_big_button_url = $config['ready_big_button_url'];
 
@@ -269,32 +267,27 @@ class Merlin {
 			$already_setup = get_option( 'merlin_' . $this->slug . '_completed' );
 
 			// Return if Merlin has already completed it's setup.
-			if ( $already_setup ) {
-				return;
-			}
+			// if ( $already_setup ) {
+			// 	return;
+			// }
 		}
 
 		// Get the logger object, so it can be used in the whole class.
 		require_once trailingslashit( $this->base_path ) . $this->directory . '/includes/class-merlin-logger.php';
 		$this->logger = Merlin_Logger::get_instance();
 
-		// Get TGMPA.
-		if ( class_exists( 'TGM_Plugin_Activation' ) ) {
-			$this->tgmpa = isset( $GLOBALS['tgmpa'] ) ? $GLOBALS['tgmpa'] : TGM_Plugin_Activation::get_instance();
-		}
-
 		add_action( 'admin_init', array( $this, 'required_classes' ) );
-		add_action( 'admin_init', array( $this, 'redirect' ), 30 );
+		// add_action( 'admin_init', array( $this, 'redirect' ), 30 );
 		add_action( 'after_switch_theme', array( $this, 'switch_theme' ) );
 		add_action( 'admin_init', array( $this, 'steps' ), 30, 0 );
 		add_action( 'admin_menu', array( $this, 'add_admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'admin_page' ), 30, 0 );
 		add_action( 'admin_init', array( $this, 'ignore' ), 5 );
 		add_action( 'admin_footer', array( $this, 'svg_sprite' ) );
-		add_filter( 'tgmpa_load', array( $this, 'load_tgmpa' ), 10, 1 );
 		add_action( 'wp_ajax_merlin_content', array( $this, '_ajax_content' ), 10, 0 );
 		add_action( 'wp_ajax_merlin_get_total_content_import_items', array( $this, '_ajax_get_total_content_import_items' ), 10, 0 );
-		add_action( 'wp_ajax_merlin_plugins', array( $this, '_ajax_plugins' ), 10, 0 );
+		add_action( 'wp_ajax_merlin_activate_plugin', array( $this, 'activate_plugin' ), 10, 0 );
+		add_action( 'wp_ajax_merlin_child_theme', array( $this, 'generate_child' ), 10, 0 );
 		add_action( 'wp_ajax_merlin_update_selected_import_data_info', array( $this, 'update_selected_import_data_info' ), 10, 0 );
 		add_action( 'wp_ajax_merlin_import_finished', array( $this, 'import_finished' ), 10, 0 );
 		add_filter( 'pt-importer/new_ajax_request_response_data', array( $this, 'pt_importer_new_ajax_request_response_data' ) );
@@ -352,7 +345,7 @@ class Merlin {
 	public function ignore() {
 
 		// Bail out if not on correct page.
-		if ( ! isset( $_GET['_wpnonce'] ) || ( ! wp_verify_nonce( $_GET['_wpnonce'], 'merlinwp-ignore-nounce' ) || ! is_admin() || ! isset( $_GET[ $this->ignore ] ) || ! current_user_can( 'manage_options' ) ) ) {
+		if ( ! isset ( $_GET['_wpnonce'] ) || ( ! wp_verify_nonce( sanitize_text_field($_GET['_wpnonce']), 'merlinwp-ignore-nounce' ) || ! is_admin() || ! isset( $_GET[ $this->ignore ] ) || ! current_user_can( 'manage_options' ) ) ) {
 			return;
 		}
 
@@ -372,8 +365,6 @@ class Merlin {
 	 * Determine if the user already has theme content installed.
 	 * This can happen if swapping from a previous theme or updated the current theme.
 	 * We change the UI a bit when updating / swapping to a new theme.
-	 *
-	 * @access public
 	 */
 	protected function is_possible_upgrade() {
 		return false;
@@ -397,6 +388,8 @@ class Merlin {
 	 */
 	public function admin_page() {
 
+		$pagenow = isset( $pagenow ) ? $pagenow : 'themes';
+
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
@@ -418,37 +411,29 @@ class Merlin {
 		wp_enqueue_style( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/css/merlin' . $suffix . '.css', array( 'wp-admin' ), MERLIN_VERSION );
 
 		// Enqueue javascript.
-		wp_enqueue_script( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/js/merlin' . $suffix . '.js', array( 'jquery-core' ), MERLIN_VERSION );
+		wp_enqueue_script( 'merlin', trailingslashit( $this->base_url ) . $this->directory . '/assets/js/merlin' . $suffix . '.js', array( 'jquery-core', 'updates' ), MERLIN_VERSION );
 
 		$texts = array(
-			'something_went_wrong' => esc_html__( 'Something went wrong. Please refresh the page and try again!', 'solarone' ),
+			'something_went_wrong' => esc_html__( 'Something went wrong. Please refresh the page and try again!', 'basti' ),
+			'next'                 => $strings['btn-next'],
+			'activating'           => $strings['btn-plugins-activate'],
+			'importing'            => $strings['btn-content-importing'],
+			'installing'           => $strings['btn-child-installing'],
+			'try_again'            => $strings['btn-try-again'],
+			'plugin_success'       => $strings['plugins-success%s'],
+			'plugin_install_error' => $strings['plugins-install-error%s'],
 		);
 
 		// Localize the javascript.
-		if ( class_exists( 'TGM_Plugin_Activation' ) ) {
-			// Check first if TMGPA is included.
-			wp_localize_script(
-				'merlin', 'merlin_params', array(
-					'tgm_plugin_nonce' => array(
-						'update'  => wp_create_nonce( 'tgmpa-update' ),
-						'install' => wp_create_nonce( 'tgmpa-install' ),
-					),
-					'tgm_bulk_url'     => $this->tgmpa->get_tgmpa_url(),
-					'ajaxurl'          => admin_url( 'admin-ajax.php' ),
-					'wpnonce'          => wp_create_nonce( 'merlin_nonce' ),
-					'texts'            => $texts,
-				)
-			);
-		} else {
-			// If TMGPA is not included.
 			wp_localize_script(
 				'merlin', 'merlin_params', array(
 					'ajaxurl' => admin_url( 'admin-ajax.php' ),
 					'wpnonce' => wp_create_nonce( 'merlin_nonce' ),
 					'texts'   => $texts,
+					'pagenow'   => $pagenow,
+					'next_link' => $this->step_next_link(),
 				)
 			);
-		}
 
 		ob_start();
 
@@ -687,6 +672,16 @@ class Merlin {
 			),
 		);
 
+		// $this->steps['child'] = array(
+		// 	'name' => esc_html__( 'Child', 'solarone' ),
+		// 	'view' => array( $this, 'child' ),
+		// );
+
+		$this->steps['plugins'] = array(
+			'name' => esc_html__( 'Plugins', 'solarone' ),
+			'view' => array( $this, 'plugins' ),
+			);
+
 		// Show the content importer, only if there's demo content added.
 		if ( ! empty( $this->import_files ) ) {
 			$this->steps['content'] = array(
@@ -771,6 +766,9 @@ class Merlin {
 		// Theme Name.
 		$theme = ucfirst( $this->theme );
 
+		// Remove "Child" from the current theme name, if it's installed.
+		$theme = str_replace( ' Child', '', $theme );
+
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
@@ -787,13 +785,12 @@ class Merlin {
 
 			<h1><?php echo esc_html( sprintf( $header, $theme ) ); ?></h1>
 
-			<p><?php echo esc_html( sprintf( $paragraph, $theme ) ); ?></p>
+			<p class="welcome_message"><?php echo esc_html( sprintf( $paragraph, $theme ) ); ?></p>
 
 		</div>
 
 		<footer class="merlin__content__footer">
-			<a href="<?php echo esc_url( wp_get_referer() && ! strpos( wp_get_referer(), 'update.php' ) ? wp_get_referer() : admin_url( '/' ) ); ?>" class="merlin__button merlin__button--skip"><?php echo esc_html( $no ); ?></a>
-			<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $start ); ?></a>
+			<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--start merlin__button--proceed"><?php echo esc_html( $start ); ?></a>
 			<?php wp_nonce_field( 'merlin' ); ?>
 		</footer>
 
@@ -806,56 +803,22 @@ class Merlin {
 	 * This is to perform tasks when the setup wizard has already been run.
 	 */
 	protected function welcome_handler() {
-
 		check_admin_referer( 'merlin' );
-
 		return false;
 	}
 
-	/**
-	 * Theme plugins
-	 */
 	protected function plugins() {
-
-		// Variables.
-		$url    = wp_nonce_url( add_query_arg( array( 'plugins' => 'go' ) ), 'merlin' );
-		$method = '';
-		$fields = array_keys( $_POST );
-		$creds  = request_filesystem_credentials( esc_url_raw( $url ), $method, false, false, $fields );
-
-		tgmpa_load_bulk_installer();
-
-		if ( false === $creds ) {
-			return true;
-		}
-
-		if ( ! WP_Filesystem( $creds ) ) {
-			request_filesystem_credentials( esc_url_raw( $url ), $method, true, false, $fields );
-			return true;
-		}
-
-		// Are there plugins that need installing/activating?
-		$plugins          = $this->get_tgmpa_plugins();
-		$required_plugins = $recommended_plugins = array();
-		$count            = count( $plugins['all'] );
-		$class            = $count ? null : 'no-plugins';
-
-		// Split the plugins into required and recommended.
-		foreach ( $plugins['all'] as $slug => $plugin ) {
-			if ( ! empty( $plugin['required'] ) ) {
-				$required_plugins[ $slug ] = $plugin;
-			} else {
-				$recommended_plugins[ $slug ] = $plugin;
-			}
-		}
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
 
+		$plugin_slug = 'aino-blocks';
+		$plugin_file = 'ainoblocks.php';
+		$plugin_name = 'AinoBlocks – Gutenberg Website Builder Blocks';
+
 		// Text strings.
-		$header    = $count ? $strings['plugins-header'] : $strings['plugins-header-success'];
-		$paragraph = $count ? $strings['plugins'] : $strings['plugins-success%s'];
-		$action    = $strings['plugins-action-link'];
+		$header    = ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) ? $strings['plugins-header-success'] : $strings['plugins-header'];
+		$paragraph = ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) ? $strings['plugins-success%s'] : $strings['plugins'];
 		$skip      = $strings['btn-skip'];
 		$next      = $strings['btn-next'];
 		$install   = $strings['btn-plugins-install'];
@@ -863,87 +826,47 @@ class Merlin {
 
 		<div class="merlin__content--transition">
 
-			<?php echo wp_kses( $this->svg( array( 'icon' => 'plugins' ) ), $this->svg_allowed_html() ); ?>
+		<svg xmlns="http://www.w3.org/2000/svg" class="theme-icon icon" width="150" height="150" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M212,132l-57.4,57.4a31.9,31.9,0,0,1-45.2,0L66.6,146.6a31.9,31.9,0,0,1,0-45.2L124,44" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path><line x1="88" y1="168" x2="32" y2="224" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line><line x1="144" y1="64" x2="184" y2="24" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line><line x1="232" y1="72" x2="192" y2="112" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line><line x1="224" y1="144" x2="112" y2="32" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></line></svg>
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
 			</svg>
 
-			<h1><?php echo esc_html( $header ); ?></h1>
+			<h2><?php echo esc_html( $header ); ?></h2>
 
-			<p><?php echo esc_html( $paragraph ); ?></p>
-
-			<?php if ( $count ) { ?>
-				<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html( $action ); ?></span><span class="chevron"></span></a>
-			<?php } ?>
+			<p id="plugin-text"><?php echo esc_html( $paragraph ); ?></p>
 
 		</div>
 
 		<form action="" method="post">
 
-			<?php if ( $count ) : ?>
-
-				<ul class="merlin__drawer merlin__drawer--install-plugins">
-
-				<?php if ( ! empty( $required_plugins ) ) : ?>
-					<?php foreach ( $required_plugins as $slug => $plugin ) : ?>
-						<li data-slug="<?php echo esc_attr( $slug ); ?>">
-							<input type="checkbox" name="default_plugins[<?php echo esc_attr( $slug ); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr( $slug ); ?>" value="1" checked>
-
-							<label for="default_plugins_<?php echo esc_attr( $slug ); ?>">
-								<i></i>
-
-								<span><?php echo esc_html( $plugin['name'] ); ?></span>
-
-								<span class="badge">
-									<span class="hint--top" aria-label="<?php esc_html_e( 'Required', 'solarone' ); ?>">
-										<?php esc_html_e( 'req', 'solarone' ); ?>
-									</span>
-								</span>
-							</label>
-						</li>
-					<?php endforeach; ?>
-				<?php endif; ?>
-
-				<?php if ( ! empty( $recommended_plugins ) ) : ?>
-					<?php foreach ( $recommended_plugins as $slug => $plugin ) : ?>
-						<li data-slug="<?php echo esc_attr( $slug ); ?>">
-							<input type="checkbox" name="default_plugins[<?php echo esc_attr( $slug ); ?>]" class="checkbox" id="default_plugins_<?php echo esc_attr( $slug ); ?>" value="1" checked>
-
-							<label for="default_plugins_<?php echo esc_attr( $slug ); ?>">
-								<i></i><span><?php echo esc_html( $plugin['name'] ); ?></span>
-							</label>
-						</li>
-					<?php endforeach; ?>
-				<?php endif; ?>
-
-				</ul>
-
-			<?php endif; ?>
-
-			<footer class="merlin__content__footer <?php echo esc_attr( $class ); ?>">
-				<?php if ( $count ) : ?>
+			<footer class="merlin__content__footer">
+				<?php if ( ! is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) : ?>
 					<a id="close" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--closer merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
 					<a id="skip" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
-					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next button-next" data-callback="install_plugins">
-						<span class="merlin__button--loading__text"><?php echo esc_html( $install ); ?></span>
-						<?php echo wp_kses( $this->loading_spinner(), $this->loading_spinner_allowed_html() ); ?>
-					</a>
+					<?php $this->install_plugin_button( $plugin_slug, $plugin_file, $plugin_name, array(), _x( 'Next', 'Theme notification', 'solarone' ), _x( 'Activate', 'Theme notification', 'solarone' ), _x( 'Install', 'Theme notification', 'solarone' ) ); ?>
 				<?php else : ?>
-					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $next ); ?></a>
+					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed"><?php echo esc_html( $next ); ?></a>
 				<?php endif; ?>
 				<?php wp_nonce_field( 'merlin' ); ?>
+
 			</footer>
 		</form>
 
-	<?php
+		<?php
 	}
 
 	/**
 	 * Page setup
 	 */
+	/**
+	 * Page setup
+	 */
 	protected function content() {
 		$import_info = $this->get_import_data_info();
+
+		// Current demo
+		$demo = isset( $_GET['demo'] ) ? sanitize_key( $_GET['demo'] ) : 0;
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
@@ -951,17 +874,45 @@ class Merlin {
 		// Text strings.
 		$header    = $strings['import-header'];
 		$paragraph = $strings['import'];
+		$demos     = $strings['import-demo-link'];
 		$action    = $strings['import-action-link'];
 		$skip      = $strings['btn-skip'];
 		$next      = $strings['btn-next'];
 		$import    = $strings['btn-import'];
 
 		$multi_import = ( 1 < count( $this->import_files ) ) ? 'is-multi-import' : null;
+
+		$allowed_html_array = array(
+			'a' => array(
+				'href'   => array(),
+				'title'  => array(),
+				'target' => array(),
+			),
+			'li' => array(
+				'data-content'	=> array(),
+				'class'   => array(),
+			),
+			'input'=> array(
+				'type'  =>  'checkbox',
+				'name'  => array(),
+				'checked'   => array(),
+				'class'   => array(),
+				'value'  => '1',
+				'id'    =>  array(),
+			),
+			'label'  => array(
+				'span'  => array(),
+				'for'  => array(),
+			),
+			'i'  => array(),
+		);
 		?>
 
 		<div class="merlin__content--transition">
 
-			<?php echo wp_kses( $this->svg( array( 'icon' => 'content' ) ), $this->svg_allowed_html() ); ?>
+			<?php
+				printf( "<img src='%s' alt='" . esc_attr__( 'Home Preview', 'solarone' ) . "'class='merlin__image-preview' />", esc_html ( $this->import_files[$demo]['import_preview_image_url']) );
+			?>
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
@@ -969,34 +920,20 @@ class Merlin {
 
 			<h1><?php echo esc_html( $header ); ?></h1>
 
-			<p><?php echo esc_html( $paragraph ); ?></p>
+			<p class="import_message"><?php echo esc_html( $paragraph ); ?></p>
 
-			<?php if ( 1 < count( $this->import_files ) ) : ?>
+			<p><?php echo wp_kses( $demos, $allowed_html_array ); ?></p>
 
-				<div class="merlin__select-control-wrapper">
-
-					<select class="merlin__select-control js-merlin-demo-import-select">
-						<?php foreach ( $this->import_files as $index => $import_file ) : ?>
-							<option value="<?php echo esc_attr( $index ); ?>"><?php echo esc_html( $import_file['import_file_name'] ); ?></option>
-						<?php endforeach; ?>
-					</select>
-
-					<div class="merlin__select-control-help">
-						<span class="hint--top" aria-label="<?php echo esc_attr__( 'Select Demo', 'solarone' ); ?>">
-							<?php echo wp_kses( $this->svg( array( 'icon' => 'downarrow' ) ), $this->svg_allowed_html() ); ?>
-						</span>
-					</div>
-				</div>
-			<?php endif; ?>
+			<input type="hidden" name="demo_import" value="<?php echo esc_attr( $demo ); ?>" class="merlin__select-control js-merlin-demo-import-select" checked="checked" />
 
 			<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html( $action ); ?></span><span class="chevron"></span></a>
 
 		</div>
 
 		<form action="" method="post" class="<?php echo esc_attr( $multi_import ); ?>">
-
+			
 			<ul class="merlin__drawer merlin__drawer--import-content js-merlin-drawer-import-content">
-				<?php echo $this->get_import_steps_html( $import_info ); ?>
+				<?php echo wp_kses( $this->get_import_steps_html( $import_info ), $allowed_html_array ); ?>
 			</ul>
 
 			<footer class="merlin__content__footer">
@@ -1023,7 +960,6 @@ class Merlin {
 		$this->logger->debug( __( 'The content import step has been displayed', 'solarone' ) );
 	}
 
-
 	/**
 	 * Final step
 	 */
@@ -1034,6 +970,9 @@ class Merlin {
 
 		// Theme Name.
 		$theme = ucfirst( $this->theme );
+
+		// Remove "Child" from the current theme name, if it's installed.
+		$theme = str_replace( ' Child', '', $theme );
 
 		// Strings passed in from the config file.
 		$strings = $this->strings;
@@ -1074,7 +1013,7 @@ class Merlin {
 
 			<h1><?php echo esc_html( sprintf( $header, $theme ) ); ?></h1>
 
-			<p><?php wp_kses( printf( $paragraph, $author ), $allowed_html_array ); ?></p>
+			<p><?php wp_kses( printf( esc_html($paragraph), esc_html($author) ), $allowed_html_array ); ?></p>
 
 		</div>
 
@@ -1099,6 +1038,7 @@ class Merlin {
 	<?php
 		$this->logger->debug( __( 'The final step has been displayed', 'solarone' ) );
 	}
+
 
 	/**
 	 * Get registered TGMPA plugins
@@ -1135,154 +1075,34 @@ class Merlin {
 	}
 
 
-
-
-	/**
-	 * Makes a call to the API.
-	 *
-	 * This code was taken from the EDD licensing addon theme example code
-	 * (`get_api_response` method of the `EDD_Theme_Updater_Admin` class).
-	 *
-	 * @param array $api_params to be used for wp_remote_get.
-	 * @return array $response JSON response.
-	 */
-	private function edd_get_api_response( $api_params ) {
-
-		$verify_ssl = (bool) apply_filters( 'edd_sl_api_request_verify_ssl', true );
-
-		$response = wp_remote_post(
-			$this->edd_remote_api_url,
-			array(
-				'timeout'   => 15,
-				'sslverify' => $verify_ssl,
-				'body'      => $api_params,
-			)
-		);
-
-		return $response;
-	}
-
-	/**
-	 * Do plugins' AJAX
-	 *
-	 * @internal    Used as a calback.
-	 */
-	function _ajax_plugins() {
-
-		if ( ! check_ajax_referer( 'merlin_nonce', 'wpnonce' ) || empty( $_POST['slug'] ) ) {
-			exit( 0 );
-		}
-
-		$json      = array();
-		$tgmpa_url = $this->tgmpa->get_tgmpa_url();
-		$plugins   = $this->get_tgmpa_plugins();
-
-		foreach ( $plugins['activate'] as $slug => $plugin ) {
-			if ( $_POST['slug'] === $slug ) {
-				$json = array(
-					'url'           => $tgmpa_url,
-					'plugin'        => array( $slug ),
-					'tgmpa-page'    => $this->tgmpa->menu,
-					'plugin_status' => 'all',
-					'_wpnonce'      => wp_create_nonce( 'bulk-plugins' ),
-					'action'        => 'tgmpa-bulk-activate',
-					'action2'       => - 1,
-					'message'       => esc_html__( 'Activating', 'solarone' ),
-				);
-				break;
-			}
-		}
-
-		foreach ( $plugins['update'] as $slug => $plugin ) {
-			if ( $_POST['slug'] === $slug ) {
-				$json = array(
-					'url'           => $tgmpa_url,
-					'plugin'        => array( $slug ),
-					'tgmpa-page'    => $this->tgmpa->menu,
-					'plugin_status' => 'all',
-					'_wpnonce'      => wp_create_nonce( 'bulk-plugins' ),
-					'action'        => 'tgmpa-bulk-update',
-					'action2'       => - 1,
-					'message'       => esc_html__( 'Updating', 'solarone' ),
-				);
-				break;
-			}
-		}
-
-		foreach ( $plugins['install'] as $slug => $plugin ) {
-			if ( $_POST['slug'] === $slug ) {
-				$json = array(
-					'url'           => $tgmpa_url,
-					'plugin'        => array( $slug ),
-					'tgmpa-page'    => $this->tgmpa->menu,
-					'plugin_status' => 'all',
-					'_wpnonce'      => wp_create_nonce( 'bulk-plugins' ),
-					'action'        => 'tgmpa-bulk-install',
-					'action2'       => - 1,
-					'message'       => esc_html__( 'Installing', 'solarone' ),
-				);
-				break;
-			}
-		}
-
-		if ( $json ) {
-			$this->logger->debug(
-				__( 'A plugin with the following data will be processed', 'solarone' ),
-				array(
-					'plugin_slug' => $_POST['slug'],
-					'message'     => $json['message'],
-				)
-			);
-
-			$json['hash']    = md5( serialize( $json ) );
-			$json['message'] = esc_html__( 'Installing', 'solarone' );
-			wp_send_json( $json );
-		} else {
-			$this->logger->debug(
-				__( 'A plugin with the following data was processed', 'solarone' ),
-				array(
-					'plugin_slug' => $_POST['slug'],
-				)
-			);
-
-			wp_send_json(
-				array(
-					'done'    => 1,
-					'message' => esc_html__( 'Success', 'solarone' ),
-				)
-			);
-		}
-
-		exit;
-	}
-
 	/**
 	 * Do content's AJAX
 	 *
 	 * @internal    Used as a callback.
 	 */
-	function _ajax_content() {
+	public function _ajax_content() {
 		static $content = null;
+		if (isset ( $_POST['selected_index'])) {
+		$selected_import = intval( $_POST['selected_index']);
+		
+			if ( null === $content ) {
+				$content = $this->get_import_data( $selected_import );
+			}
 
-		$selected_import = intval( $_POST['selected_index'] );
+			if ( ! check_ajax_referer( 'merlin_nonce', 'wpnonce' ) || empty( $_POST['content'] ) && isset( $content[ $_POST['content'] ] ) ) {
+				$this->logger->error( __( 'The content importer AJAX call failed to start, because of incorrect data', 'solarone' ) );
 
-		if ( null === $content ) {
-			$content = $this->get_import_data( $selected_import );
-		}
-
-		if ( ! check_ajax_referer( 'merlin_nonce', 'wpnonce' ) || empty( $_POST['content'] ) && isset( $content[ $_POST['content'] ] ) ) {
-			$this->logger->error( __( 'The content importer AJAX call failed to start, because of incorrect data', 'solarone' ) );
-
-			wp_send_json_error(
+				wp_send_json_error(
 				array(
 					'error'   => 1,
 					'message' => esc_html__( 'Invalid content!', 'solarone' ),
 				)
-			);
+				);
+			}
 		}
 
 		$json         = false;
-		$this_content = $content[ $_POST['content'] ];
+		$this_content = $content[sanitize_text_field($_POST['content'])];
 
 		if ( isset( $_POST['proceed'] ) ) {
 			if ( is_callable( $this_content['install_callback'] ) ) {
@@ -1315,7 +1135,7 @@ class Merlin {
 				'url'            => admin_url( 'admin-ajax.php' ),
 				'action'         => 'merlin_content',
 				'proceed'        => 'true',
-				'content'        => $_POST['content'],
+				'content'        => sanitize_text_field($_POST['content']),
 				'_wpnonce'       => wp_create_nonce( 'merlin_nonce' ),
 				'selected_index' => $selected_import,
 				'message'        => $this_content['installing'],
@@ -1332,7 +1152,7 @@ class Merlin {
 				__( 'The content import AJAX call failed with this passed data', 'solarone' ),
 				array(
 					'selected_content_index' => $selected_import,
-					'importing_content'      => $_POST['content'],
+					'importing_content'      => sanitize_text_field($_POST['content']),
 					'importing_data'         => $this_content['data'],
 				)
 			);
@@ -1382,11 +1202,7 @@ class Merlin {
 	public function get_import_data_info( $selected_import_index = 0 ) {
 		$import_data = array(
 			'content'      => false,
-			'widgets'      => false,
-			'options'      => false,
-			'sliders'      => false,
-			'redux'        => false,
-			'after_import' => false,
+			'homepage_setup' => false,
 		);
 
 		if ( empty( $this->import_files[ $selected_import_index ] ) ) {
@@ -1400,36 +1216,8 @@ class Merlin {
 			$import_data['content'] = true;
 		}
 
-		if (
-			! empty( $this->import_files[ $selected_import_index ]['import_widget_file_url'] ) ||
-			! empty( $this->import_files[ $selected_import_index ]['local_import_widget_file'] )
-		) {
-			$import_data['widgets'] = true;
-		}
-
-		if (
-			! empty( $this->import_files[ $selected_import_index ]['import_customizer_file_url'] ) ||
-			! empty( $this->import_files[ $selected_import_index ]['local_import_customizer_file'] )
-		) {
-			$import_data['options'] = true;
-		}
-
-		if (
-			! empty( $this->import_files[ $selected_import_index ]['import_rev_slider_file_url'] ) ||
-			! empty( $this->import_files[ $selected_import_index ]['local_import_rev_slider_file'] )
-		) {
-			$import_data['sliders'] = true;
-		}
-
-		if (
-			! empty( $this->import_files[ $selected_import_index ]['import_redux'] ) ||
-			! empty( $this->import_files[ $selected_import_index ]['local_import_redux'] )
-		) {
-			$import_data['redux'] = true;
-		}
-
 		if ( false !== has_action( 'merlin_after_all_import' ) ) {
-			$import_data['after_import'] = true;
+			$import_data['homepage_setup'] = true;
 		}
 
 		return $import_data;
@@ -1461,62 +1249,10 @@ class Merlin {
 			);
 		}
 
-		if ( ! empty( $import_files['widgets'] ) ) {
-			$content['widgets'] = array(
-				'title'            => esc_html__( 'Widgets', 'solarone' ),
-				'description'      => esc_html__( 'Sample widgets data.', 'solarone' ),
-				'pending'          => esc_html__( 'Pending', 'solarone' ),
-				'installing'       => esc_html__( 'Installing', 'solarone' ),
-				'success'          => esc_html__( 'Success', 'solarone' ),
-				'install_callback' => array( 'Merlin_Widget_Importer', 'import' ),
-				'checked'          => $this->is_possible_upgrade() ? 0 : 1,
-				'data'             => $import_files['widgets'],
-			);
-		}
-
-		if ( ! empty( $import_files['sliders'] ) ) {
-			$content['sliders'] = array(
-				'title'            => esc_html__( 'Revolution Slider', 'solarone' ),
-				'description'      => esc_html__( 'Sample Revolution sliders data.', 'solarone' ),
-				'pending'          => esc_html__( 'Pending', 'solarone' ),
-				'installing'       => esc_html__( 'Installing', 'solarone' ),
-				'success'          => esc_html__( 'Success', 'solarone' ),
-				'install_callback' => array( $this, 'import_revolution_sliders' ),
-				'checked'          => $this->is_possible_upgrade() ? 0 : 1,
-				'data'             => $import_files['sliders'],
-			);
-		}
-
-		if ( ! empty( $import_files['options'] ) ) {
-			$content['options'] = array(
-				'title'            => esc_html__( 'Options', 'solarone' ),
-				'description'      => esc_html__( 'Sample theme options data.', 'solarone' ),
-				'pending'          => esc_html__( 'Pending', 'solarone' ),
-				'installing'       => esc_html__( 'Installing', 'solarone' ),
-				'success'          => esc_html__( 'Success', 'solarone' ),
-				'install_callback' => array( 'Merlin_Customizer_Importer', 'import' ),
-				'checked'          => $this->is_possible_upgrade() ? 0 : 1,
-				'data'             => $import_files['options'],
-			);
-		}
-
-		if ( ! empty( $import_files['redux'] ) ) {
-			$content['redux'] = array(
-				'title'            => esc_html__( 'Redux Options', 'solarone' ),
-				'description'      => esc_html__( 'Redux framework options.', 'solarone' ),
-				'pending'          => esc_html__( 'Pending', 'solarone' ),
-				'installing'       => esc_html__( 'Installing', 'solarone' ),
-				'success'          => esc_html__( 'Success', 'solarone' ),
-				'install_callback' => array( 'Merlin_Redux_Importer', 'import' ),
-				'checked'          => $this->is_possible_upgrade() ? 0 : 1,
-				'data'             => $import_files['redux'],
-			);
-		}
-
 		if ( false !== has_action( 'merlin_after_all_import' ) ) {
-			$content['after_import'] = array(
-				'title'            => esc_html__( 'After import setup', 'solarone' ),
-				'description'      => esc_html__( 'After import setup.', 'solarone' ),
+			$content['homepage_setup'] = array(
+				'title'            => esc_html__( 'Homepage setup', 'solarone' ),
+				'description'      => esc_html__( 'Homepage setup.', 'solarone' ),
 				'pending'          => esc_html__( 'Pending', 'solarone' ),
 				'installing'       => esc_html__( 'Installing', 'solarone' ),
 				'success'          => esc_html__( 'Success', 'solarone' ),
@@ -1529,27 +1265,6 @@ class Merlin {
 		$content = apply_filters( 'merlin_get_base_content', $content, $this );
 
 		return $content;
-	}
-
-	/**
-	 * Import revolution slider.
-	 *
-	 * @param string $file Path to the revolution slider zip file.
-	 */
-	public function import_revolution_sliders( $file ) {
-		if ( ! class_exists( 'RevSlider', false ) ) {
-			return 'failed';
-		}
-
-		$importer = new RevSlider();
-
-		$response = $importer->importSliderFromPost( true, true, $file );
-
-		$this->logger->info( __( 'The revolution slider import was executed', 'solarone' ) );
-
-		if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
-			return 'true';
-		}
 	}
 
 	/**
@@ -1648,11 +1363,12 @@ class Merlin {
 		if ( ! empty( $existing_name ) ) {
 			$this->import_file_base_name = $existing_name;
 		} else {
-			$this->import_file_base_name = date( 'Y-m-d__H-i-s' );
+			$this->import_file_base_name = gmdate( 'Y-m-d__H-i-s' );
 		}
 
 		set_transient( 'merlin_import_file_base_name', $this->import_file_base_name, MINUTE_IN_SECONDS );
 	}
+
 
 	/**
 	 * Get the import file paths.
@@ -1675,10 +1391,6 @@ class Merlin {
 		$base_file_name = $this->import_file_base_name;
 		$import_files   = array(
 			'content' => '',
-			'widgets' => '',
-			'options' => '',
-			'redux'   => array(),
-			'sliders' => '',
 		);
 
 		$downloader = new Merlin_Downloader();
@@ -1705,119 +1417,6 @@ class Merlin {
 				$import_files['content'] = '';
 			}
 		}
-
-		// Get widgets file as well. If defined!
-		if ( ! empty( $selected_import_data['import_widget_file_url'] ) ) {
-			// Set the filename string for widgets import file.
-			$widget_filename = 'widgets-' . $base_file_name . '.json';
-
-			// Retrieve the content import file.
-			$import_files['widgets'] = $downloader->fetch_existing_file( $widget_filename );
-
-			// Download the file, if it's missing.
-			if ( empty( $import_files['widgets'] ) ) {
-				$import_files['widgets'] = $downloader->download_file( $selected_import_data['import_widget_file_url'], $widget_filename );
-			}
-
-			// Reset the variable, if there was an error.
-			if ( is_wp_error( $import_files['widgets'] ) ) {
-				$import_files['widgets'] = '';
-			}
-		} elseif ( ! empty( $selected_import_data['local_import_widget_file'] ) ) {
-			if ( file_exists( $selected_import_data['local_import_widget_file'] ) ) {
-				$import_files['widgets'] = $selected_import_data['local_import_widget_file'];
-			}
-		}
-
-		// Get customizer import file as well. If defined!
-		if ( ! empty( $selected_import_data['import_customizer_file_url'] ) ) {
-			// Setup filename path to save the customizer content.
-			$customizer_filename = 'options-' . $base_file_name . '.dat';
-
-			// Retrieve the content import file.
-			$import_files['options'] = $downloader->fetch_existing_file( $customizer_filename );
-
-			// Download the file, if it's missing.
-			if ( empty( $import_files['options'] ) ) {
-				$import_files['options'] = $downloader->download_file( $selected_import_data['import_customizer_file_url'], $customizer_filename );
-			}
-
-			// Reset the variable, if there was an error.
-			if ( is_wp_error( $import_files['options'] ) ) {
-				$import_files['options'] = '';
-			}
-		} elseif ( ! empty( $selected_import_data['local_import_customizer_file'] ) ) {
-			if ( file_exists( $selected_import_data['local_import_customizer_file'] ) ) {
-				$import_files['options'] = $selected_import_data['local_import_customizer_file'];
-			}
-		}
-
-		// Get revolution slider import file as well. If defined!
-		if ( ! empty( $selected_import_data['import_rev_slider_file_url'] ) ) {
-			// Setup filename path to save the customizer content.
-			$rev_slider_filename = 'slider-' . $base_file_name . '.zip';
-
-			// Retrieve the content import file.
-			$import_files['sliders'] = $downloader->fetch_existing_file( $rev_slider_filename );
-
-			// Download the file, if it's missing.
-			if ( empty( $import_files['sliders'] ) ) {
-				$import_files['sliders'] = $downloader->download_file( $selected_import_data['import_rev_slider_file_url'], $rev_slider_filename );
-			}
-
-			// Reset the variable, if there was an error.
-			if ( is_wp_error( $import_files['sliders'] ) ) {
-				$import_files['sliders'] = '';
-			}
-		} elseif ( ! empty( $selected_import_data['local_import_rev_slider_file'] ) ) {
-			if ( file_exists( $selected_import_data['local_import_rev_slider_file'] ) ) {
-				$import_files['sliders'] = $selected_import_data['local_import_rev_slider_file'];
-			}
-		}
-
-		// Get redux import file as well. If defined!
-		if ( ! empty( $selected_import_data['import_redux'] ) ) {
-			$redux_items = array();
-
-			// Setup filename paths to save the Redux content.
-			foreach ( $selected_import_data['import_redux'] as $index => $redux_item ) {
-				$redux_filename = 'redux-' . $index . '-' . $base_file_name . '.json';
-
-				// Retrieve the content import file.
-				$file_path = $downloader->fetch_existing_file( $redux_filename );
-
-				// Download the file, if it's missing.
-				if ( empty( $file_path ) ) {
-					$file_path = $downloader->download_file( $redux_item['file_url'], $redux_filename );
-				}
-
-				// Reset the variable, if there was an error.
-				if ( is_wp_error( $file_path ) ) {
-					$file_path = '';
-				}
-
-				$redux_items[] = array(
-					'option_name' => $redux_item['option_name'],
-					'file_path'   => $file_path,
-				);
-			}
-
-			// Download the Redux import file.
-			$import_files['redux'] = $redux_items;
-		} elseif ( ! empty( $selected_import_data['local_import_redux'] ) ) {
-			$redux_items = array();
-
-			// Setup filename paths to save the Redux content.
-			foreach ( $selected_import_data['local_import_redux'] as $redux_item ) {
-				if ( file_exists( $redux_item['file_path'] ) ) {
-					$redux_items[] = $redux_item;
-				}
-			}
-
-			// Download the Redux import file.
-			$import_files['redux'] = $redux_items;
-		}
-
 		return $import_files;
 	}
 
@@ -1825,7 +1424,7 @@ class Merlin {
 	 * AJAX callback for the 'merlin_update_selected_import_data_info' action.
 	 */
 	public function update_selected_import_data_info() {
-		$selected_index = ! isset( $_POST['selected_index'] ) ? false : intval( $_POST['selected_index'] );
+		$selected_index = ! isset( $_POST['selected_index']) ? false : intval( wp_verify_nonce( sanitize_text_field( $_POST['selected_index'])));
 
 		if ( false === $selected_index ) {
 			wp_send_json_error();
@@ -1875,4 +1474,154 @@ class Merlin {
 		delete_transient( 'merlin_import_file_base_name' );
 		wp_send_json_success();
 	}
+
+	/**
+	 * AJAX call for activating plugin.
+	 */
+	public function activate_plugin() {
+
+		if ( ! check_ajax_referer( 'merlin_nonce', 'wpnonce' ) || empty( $_POST['plugin'] ) && isset( $content[ $_POST['plugin'] ] ) ) {
+			return;
+		}
+
+		// Strings passed in from the config file.
+		$strings = $this->strings;
+
+		// Activation flag.
+		$not_activated = true;
+
+		$slug        = sanitize_title( $this->theme );
+		$all_plugins = get_plugins();
+		$plugin      = isset( $_POST['plugin'] ) ? sanitize_text_field( wp_unslash( $_POST['plugin'] ) ) : '';
+
+		if ( array_key_exists( $plugin . '/' . $plugin . '.php', $all_plugins ) ) {
+			$not_activated = activate_plugin( $plugin . '/' . $plugin . '.php' );
+		}
+
+		if ( $not_activated ) {
+			wp_send_json(
+				array(
+					'error' => sprintf(
+						esc_html( $strings['plugins-activate-error%s'] ),
+						$slug
+					),
+				)
+			);
+		} else {
+			wp_send_json(
+				array(
+					'done'    => 1,
+					'message' => sprintf(
+						esc_html( $strings['plugins-success%s'] ),
+						$slug
+					),
+				)
+			);
+		}
+	}
+
+	/**
+	 * Output a button that will install or activate a plugin if it doesn't exist, or display a disabled button if the
+	 * plugin is already activated.
+	 *
+	 * @param string $plugin_slug The plugin slug.
+	 * @param string $plugin_file The plugin file.
+	 * @param string $plugin_name The plugin name.
+	 * @param string $classes CSS classes.
+	 * @param string $activated Button activated text.
+	 * @param string $activate Button activate text.
+	 * @param string $install Button install text.
+	 */
+	public function install_plugin_button( $plugin_slug, $plugin_file, $plugin_name, $classes = array(), $activated = '', $activate = '', $install = '' ) {
+		if ( current_user_can( 'install_plugins' ) && current_user_can( 'activate_plugins' ) ) {
+			if ( is_plugin_active( $plugin_slug . '/' . $plugin_file ) ) {
+				// The plugin is already active.
+				$button = array(
+					'message' => esc_attr_x( 'Next', 'Theme notification', 'solarone' ),
+					'url'     => $this->step_next_link(),
+					'classes' => array( 'merlin-button', 'merlin__button', 'merlin__button--next', 'merlin__button--proceed' ),
+				);
+
+				if ( '' !== $activated ) {
+					$button['message'] = esc_attr( $activated );
+				}
+			} elseif ( self::is_plugin_installed( $plugin_slug ) ) {
+				$url = self::is_plugin_installed( $plugin_slug );
+
+				// The plugin exists but isn't activated yet.
+				$button = array(
+					'message' => esc_attr_x( 'Activate', 'Theme notification', 'solarone' ),
+					'url'     => $url,
+					'classes' => array( 'activate-now', 'merlin__button', 'merlin__button--next', 'button-next' ),
+				);
+
+				if ( '' !== $activate ) {
+					$button['message'] = esc_attr( $activate );
+				}
+			} else {
+				// The plugin doesn't exist.
+				$url    = wp_nonce_url(
+					add_query_arg(
+						array(
+							'action' => 'install-plugin',
+							'plugin' => $plugin_slug,
+						),
+						self_admin_url( 'themes.php?page=merlin&step=plugins' )
+					),
+					'install-plugin_' . $plugin_slug
+				);
+				$button = array(
+					'message' => esc_attr_x( 'Install', 'Theme notification', 'solarone' ),
+					'url'     => $url,
+					'classes' => array( 'merlin-install-now', 'install-now', 'install-' . $plugin_slug, 'merlin__button', 'merlin__button--next', 'button-next' ),
+				);
+
+				if ( '' !== $install ) {
+					$button['message'] = esc_attr( $install );
+				}
+			}
+
+			if ( ! empty( $classes ) ) {
+				$button['classes'] = array_merge( $button['classes'], $classes );
+			}
+
+			$button['classes'] = implode( ' ', $button['classes'] );
+
+			?>
+			<span class="plugin-card-<?php echo esc_attr( $plugin_slug ); ?>">
+				<a href="<?php echo esc_url( $button['url'] ); ?>" class="<?php echo esc_attr( $button['classes'] ); ?>" data-originaltext="<?php echo esc_attr( $button['message'] ); ?>" data-name="<?php echo esc_attr( $plugin_name ); ?>" data-slug="<?php echo esc_attr( $plugin_slug ); ?>" data-callback="install_plugins" aria-label="<?php echo esc_attr( $button['message'] ); ?>">
+					<span class="merlin__button--loading__text"><?php echo esc_html( $button['message'] ); ?></span>
+				</a>
+			</span>
+			<?php
+		}
+	}
+
+	/**
+	 * Check if a plugin is installed and return the url to activate it if so.
+	 *
+	 * @param string $plugin_slug The plugin slug.
+	 */
+	private static function is_plugin_installed( $plugin_slug ) {
+		if ( file_exists( WP_PLUGIN_DIR . '/' . $plugin_slug ) ) {
+			$plugins = get_plugins( '/' . $plugin_slug );
+			if ( ! empty( $plugins ) ) {
+				$keys        = array_keys( $plugins );
+				$plugin_file = $plugin_slug . '/' . $keys[0];
+				$url         = wp_nonce_url(
+					add_query_arg(
+						array(
+							'action' => 'activate',
+							'plugin' => $plugin_file,
+						),
+						admin_url( 'themes.php?page=merlin&step=plugins' )
+					),
+					'activate-plugin_' . $plugin_file
+				);
+				return $url;
+			}
+		}
+		return false;
+	}
+
 }

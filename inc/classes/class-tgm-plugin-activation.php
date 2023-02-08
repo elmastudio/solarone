@@ -8,11 +8,7 @@
  * or theme author for support.
  *
  * @package   TGM-Plugin-Activation
- * @version   1.0.0 for theme Kori
- * @link      http://tgmpluginactivation.com/
- * @author    Thomas Griffin, Gary Jones, Juliette Reinders Folmer
- * @copyright Copyright (c) 2011, Thomas Griffin
- * @license   GPL-2.0+
+ * @version   1.0.0
  */
 
 /*
@@ -44,8 +40,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 	 * @since 1.0.0
 	 *
 	 * @package TGM-Plugin-Activation
-	 * @author  Thomas Griffin
-	 * @author  Gary Jones
 	 */
 	class TGM_Plugin_Activation {
 		/**
@@ -2084,8 +2078,6 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
 	 * @since 2.2.0
 	 *
 	 * @package TGM-Plugin-Activation
-	 * @author  Thomas Griffin
-	 * @author  Gary Jones
 	 */
 	class TGMPA_List_Table extends WP_List_Table {
 		/**
@@ -3085,8 +3077,6 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 				 *            This was done to prevent backward compatibility issues with v2.3.6.}}
 				 *
 				 * @package TGM-Plugin-Activation
-				 * @author  Thomas Griffin
-				 * @author  Gary Jones
 				 */
 				class TGMPA_Bulk_Installer extends Plugin_Upgrader {
 					/**
@@ -3416,8 +3406,6 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 				 * @see https://core.trac.wordpress.org/browser/trunk/src/wp-admin/includes/class-wp-upgrader-skins.php
 				 *
 				 * @package TGM-Plugin-Activation
-				 * @author  Thomas Griffin
-				 * @author  Gary Jones
 				 */
 				class TGMPA_Bulk_Installer_Skin extends Bulk_Upgrader_Skin {
 					/**
@@ -3643,7 +3631,6 @@ if ( ! class_exists( 'TGMPA_Utils' ) ) {
 	 * @since 2.5.0
 	 *
 	 * @package TGM-Plugin-Activation
-	 * @author  Juliette Reinders Folmer
 	 */
 	class TGMPA_Utils {
 		/**

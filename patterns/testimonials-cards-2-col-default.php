@@ -35,7 +35,7 @@
 
 <!-- wp:ainoblocks/author {"name":"Inger Long","info":", Paradigm founder","infoTextColor":"#323232","nameTextColor":"#323232","layout":"floated-left"} -->
 <div class="wp-block-ainoblocks-author floated-left"><!-- wp:ainoblocks/profile-image {"imgID":22066,"imgRadius":100,"borderWidth":2,"backgroundColor":"quinary"} -->
-<img class="wp-block-ainoblocks-profile-image has-quinary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar-img-small.jpeg" alt=""/>
+<img class="wp-block-ainoblocks-profile-image has-quinary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo SOLARONE_THEME_DIR . '/assets/images/avatar-img-small.jpeg'; ?>" alt=""/>
 <!-- /wp:ainoblocks/profile-image --><div class="wp-block-ainoblocks-author__text-wrapper"><div class="wp-block-ainoblocks-author__author"><span style="color:#323232" class="wp-block-ainoblocks-author__name"><?php echo esc_html__('Inger Long', 'soloarone'); ?></span><span style="color:#323232" class="wp-block-ainoblocks-author__info"><?php echo esc_html__(', Paradigm founder', 'soloarone'); ?></span></div></div></div>
 <!-- /wp:ainoblocks/author --></div>
 <!-- /wp:group --></div>
@@ -57,7 +57,7 @@
 
 <!-- wp:ainoblocks/author {"name":"Megan Hawkins","info":", Sixteen Coworking Lab","infoTextColor":"#323232","nameTextColor":"#323232","layout":"floated-left"} -->
 <div class="wp-block-ainoblocks-author floated-left"><!-- wp:ainoblocks/profile-image {"imgID":22066,"imgRadius":100,"borderWidth":2,"backgroundColor":"quarternary"} -->
-<img class="wp-block-ainoblocks-profile-image has-quarternary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar-img-small.jpeg" alt=""/>
+<img class="wp-block-ainoblocks-profile-image has-quarternary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo SOLARONE_THEME_DIR . '/assets/images/avatar-img-small.jpeg'; ?>" alt=""/>
 <!-- /wp:ainoblocks/profile-image --><div class="wp-block-ainoblocks-author__text-wrapper"><div class="wp-block-ainoblocks-author__author"><span style="color:#323232" class="wp-block-ainoblocks-author__name"><?php echo esc_html__('Megan Hawkins', 'soloarone'); ?></span><span style="color:#323232" class="wp-block-ainoblocks-author__info"><?php echo esc_html__(', Sixteen Coworking Lab', 'soloarone'); ?></span></div></div></div>
 <!-- /wp:ainoblocks/author --></div>
 <!-- /wp:group --></div>
@@ -79,7 +79,7 @@
 
 <!-- wp:ainoblocks/author {"name":"Charlotte Kennedy","info":", CrowdCamp","infoTextColor":"#323232","nameTextColor":"#323232","layout":"floated-left"} -->
 <div class="wp-block-ainoblocks-author floated-left"><!-- wp:ainoblocks/profile-image {"imgID":22066,"imgRadius":100,"borderWidth":2,"backgroundColor":"quarternary"} -->
-<img class="wp-block-ainoblocks-profile-image has-quarternary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar-img-small.jpeg" alt=""/>
+<img class="wp-block-ainoblocks-profile-image has-quarternary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo SOLARONE_THEME_DIR . '/assets/images/avatar-img-small.jpeg'; ?>" alt=""/>
 <!-- /wp:ainoblocks/profile-image --><div class="wp-block-ainoblocks-author__text-wrapper"><div class="wp-block-ainoblocks-author__author"><span style="color:#323232" class="wp-block-ainoblocks-author__name"><?php echo esc_html__('Charlotte Kennedy', 'soloarone'); ?></span><span style="color:#323232" class="wp-block-ainoblocks-author__info"><?php echo esc_html__(', CrowdCamp', 'soloarone'); ?></span></div></div></div>
 <!-- /wp:ainoblocks/author --></div>
 <!-- /wp:group --></div>
@@ -101,7 +101,7 @@
 
 <!-- wp:ainoblocks/author {"name":"Mosel Thomas","info":", Superflux Agency","infoTextColor":"#323232","nameTextColor":"#323232","layout":"floated-left"} -->
 <div class="wp-block-ainoblocks-author floated-left"><!-- wp:ainoblocks/profile-image {"imgID":22066,"imgRadius":100,"borderWidth":2,"backgroundColor":"quinary"} -->
-<img class="wp-block-ainoblocks-profile-image has-quinary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo get_template_directory_uri(); ?>/assets/images/avatar-img-small.jpeg" alt=""/>
+<img class="wp-block-ainoblocks-profile-image has-quinary-background-color has-background" style="width:calc(40px + 2px * 2);padding:2px;border-radius:100%" src="<?php echo SOLARONE_THEME_DIR . '/assets/images/avatar-img-small.jpeg'; ?>" alt=""/>
 <!-- /wp:ainoblocks/profile-image --><div class="wp-block-ainoblocks-author__text-wrapper"><div class="wp-block-ainoblocks-author__author"><span style="color:#323232" class="wp-block-ainoblocks-author__name"><?php echo esc_html__('Mosel Thomas', 'soloarone'); ?></span><span style="color:#323232" class="wp-block-ainoblocks-author__info"><?php echo esc_html__(', Superflux Agency', 'soloarone'); ?></span></div></div></div>
 <!-- /wp:ainoblocks/author --></div>
 <!-- /wp:group --></div>

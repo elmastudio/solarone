@@ -21,7 +21,7 @@
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":2,"gridColumnEndDesktop":12,"gridColumnStartTablet":1,"gridColumnEndTablet":13,"gridColumnStartMobile":1,"gridColumnEndMobile":13,"paddingTop":13,"paddingBottom":13} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__2 col_end_d__12 col_start_t__1 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__start no-stacking pt__13 pb__13"><!-- wp:ainoblocks/card {"borderRadius":"xxs","shadowName":"shadow-b","paddingTop":0,"paddingBottom":0,"paddingLeft":0,"paddingRight":0,"className":"shadow-b"} -->
 <div class="wp-block-ainoblocks-card shadow-b br-all__xxs"><!-- wp:image {"sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"10px"}}} -->
-<figure class="wp-block-image size-full" style="border-radius:10px"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/videoframe.png" alt=""/></figure>
+<figure class="wp-block-image size-full" style="border-radius:10px"><img src="<?php echo SOLARONE_THEME_DIR . '/assets/images/videoframe.png'; ?>" alt=""/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:ainoblocks/card --></div>
 <!-- /wp:ainoblocks/grid-item --></div>
