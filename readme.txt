@@ -90,7 +90,8 @@ Source: https://github.com/richtabor/MerlinWP
 = 1.5.4 =
 * Released: February 8, 2023
 
-* Enhance: Remove unneeded style variations for fonts.
+* Fix: Remove unneeded style variations for fonts.
+* Fix: Theme setup workflow via WPMerlin.
 
 = 1.5.3 =
 * Released: February 7, 2023
