@@ -48,7 +48,7 @@
 <!-- wp:ainoblocks/flex-item {"flexShrink":true,"alignSelfDesktop":"align__auto__d","alignSelfMobile":"align__flexstart__m","paddingLeft":7,"paddingRight":0} -->
 <div class="wp-block-ainoblocks-flex-item align__auto__d auto align__flexstart__m pl__7" style="flex-shrink:0"><!-- wp:ainoblocks/author {"name":"Abigale Smith","info":"SylviaTech founder","infoTextColor":"#a0a0a3","nameTextColor":"#a0a0a3","layout":"stacked"} -->
 <div class="wp-block-ainoblocks-author stacked"><!-- wp:ainoblocks/profile-image {"imgID":20538,"imgSize":"img-l","imgRadius":100,"borderWidth":6,"backgroundColor":"variant-quinary"} -->
-<img class="wp-block-ainoblocks-profile-image img-l has-variant-quinary-background-color has-background" style="width:calc(144px + 6px * 2);padding:6px;border-radius:100%" src="<?php echo SOLARONE_THEME_DIR . '/assets/images/avatar-img-large.jpeg'; ?>" alt=""/>
+<img class="wp-block-ainoblocks-profile-image img-l has-variant-quinary-background-color has-background" style="width:calc(144px + 6px * 2);padding:6px;border-radius:100%" src="<?php echo esc_url( get_template_directory_uri() ) . '/assets/images/avatar-img-large.jpeg'; ?>" alt=""/>
 <!-- /wp:ainoblocks/profile-image --><div class="wp-block-ainoblocks-author__text-wrapper"><div class="wp-block-ainoblocks-author__author"><span style="color:#a0a0a3" class="wp-block-ainoblocks-author__name">Abigale Smith</span><span style="color:#a0a0a3" class="wp-block-ainoblocks-author__info">SylviaTech founder</span></div></div></div>
 <!-- /wp:ainoblocks/author --></div>
 <!-- /wp:ainoblocks/flex-item --></div>
