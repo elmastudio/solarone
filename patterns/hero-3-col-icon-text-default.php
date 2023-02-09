@@ -12,7 +12,7 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__3 col_end_d__5 col_start_t__1 col_end_t__5 col_start_m__1 col_end_m__13 align-self__center justify-self__stretch no-stacking mt_d__0 mt_t__0 mt_m__0"><!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__center__t align-items__center__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item {"flexShrink":true} -->
 <div class="wp-block-ainoblocks-flex-item auto" style="flex-shrink:0"><!-- wp:image {"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo SOLARONE_THEME_DIR . '/assets/images/icon-circle-01.png'; ?>" alt="" width="64" height="64"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/assets/images/icon-circle-01.png'; ?>" alt="" width="64" height="64"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:ainoblocks/flex-item -->
 
@@ -26,7 +26,7 @@
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":5,"gridColumnEndDesktop":6,"gridColumnStartTablet":5,"gridColumnEndTablet":6,"alignItem":"center","justifyItem":"center","className":"mobile-hide tablet-hide desktop-show"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__5 col_end_d__6 col_start_t__5 col_end_t__6 col_start_m__1 col_end_m__7 align-self__center justify-self__center no-stacking mobile-hide tablet-hide desktop-show"><!-- wp:image {"width":13,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo SOLARONE_THEME_DIR . '/assets/images/arrow.png.png'; ?>" alt="" width="13" height="24"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/assets/images/arrow.png.png'; ?>" alt="" width="13" height="24"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:ainoblocks/grid-item -->
 
@@ -34,7 +34,7 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__6 col_end_d__8 col_start_t__5 col_end_t__9 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_d__0 mt_t__0 mt_m__4"><!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__center__t align-items__center__m align-cont__stretch__d align-cont__stretch__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item {"flexShrink":true} -->
 <div class="wp-block-ainoblocks-flex-item auto" style="flex-shrink:0"><!-- wp:image {"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo SOLARONE_THEME_DIR . '/assets/images/icon-circle-02'; ?>"  alt="" width="64" height="64"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/assets/images/icon-circle-02'; ?>"  alt="" width="64" height="64"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:ainoblocks/flex-item -->
 
@@ -48,7 +48,7 @@
 
 <!-- wp:ainoblocks/grid-item {"gridColumnStartDesktop":8,"gridColumnEndDesktop":9,"alignItem":"center","justifyItem":"center","className":"mobile-hide tablet-hide desktop-show"} -->
 <div class="wp-block-ainoblocks-grid-item col_start_d__8 col_end_d__9 col_start_t__1 col_end_t__7 col_start_m__1 col_end_m__7 align-self__center justify-self__center no-stacking mobile-hide tablet-hide desktop-show"><!-- wp:image {"width":13,"height":24,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo SOLARONE_THEME_DIR . '/assets/images/arrow.png'; ?>" alt="" width="13" height="24"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/assets/images/arrow.png'; ?>" alt="" width="13" height="24"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:ainoblocks/grid-item -->
 
@@ -56,7 +56,7 @@
 <div class="wp-block-ainoblocks-grid-item col_start_d__9 col_end_d__11 col_start_t__9 col_end_t__13 col_start_m__1 col_end_m__13 align-self__start justify-self__stretch no-stacking mt_d__0 mt_t__0 mt_m__4"><!-- wp:ainoblocks/flexbox {"alignItemsDesktop":"align-items__center__d","alignItemsTablet":"align-items__center__t","alignItemsMobile":"align-items__center__m","alignContentTablet":"align-cont__center__t"} -->
 <div class="wp-block-ainoblocks-flexbox direction__row__d direction__row__t direction__row__m nowrap__d nowrap_t nowrap_m justify__flexstart__d justify__flexstart__t justify__flexstart__m align-items__center__d align-items__center__t align-items__center__m align-cont__stretch__d align-cont__center__t align-cont__stretch__m shadow-none"><!-- wp:ainoblocks/flex-item {"flexShrink":true} -->
 <div class="wp-block-ainoblocks-flex-item auto" style="flex-shrink:0"><!-- wp:image {"width":64,"height":64,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full is-resized"><img src="<?php echo SOLARONE_THEME_DIR . '/assets/images/icon-circle-03.png'; ?>" alt="" width="64" height="64"/></figure>
+<figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_template_directory_uri() ) . '/assets/images/icon-circle-03.png'; ?>" alt="" width="64" height="64"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:ainoblocks/flex-item -->
 
