@@ -1,5 +1,10 @@
 *** Solarone changelog ***
 
+2026-09-09 - version 1.5.4.2
+
+- Fix: The theme setup wizard now loads on init and only in the admin. WordPress 6.7 and newer no longer report that the theme loads its translations too early, and three PHP 8.2 deprecation notices from the wizard are gone.
+
+
 2023-02-09 - version 1.5.4.1
 
 - Fix: Delete unnedded demo folder.

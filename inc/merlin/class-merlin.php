@@ -27,6 +27,15 @@ class Merlin {
 	protected $theme;
 
 	/**
+	 * Theme slug, and the two config URLs (declared for PHP 8.2).
+	 *
+	 * @var string
+	 */
+	protected $slug;
+	protected $child_action_btn_url;
+	protected $ready_big_button_url;
+
+	/**
 	 * Current step.
 	 *
 	 * @var string

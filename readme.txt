@@ -3,7 +3,7 @@ Contributors: elmastudio
 Requires at least: 6.1
 Tested up to: WordPress 6.1
 Requires PHP: 7.0
-Stable tag: 1.5.4.1
+Stable tag: 1.5.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,11 @@ Source: https://github.com/richtabor/MerlinWP
 Install the Git Updater plugin (https://git-updater.com/) and WordPress will offer new versions of this theme as regular theme updates, straight from GitHub.
 
 == Changelog ==
+
+= 1.5.4.2 =
+* Released: September 9, 2026
+
+* Fix: The theme setup wizard now loads on init and only in the admin. WordPress 6.7 and newer no longer report that the theme loads its translations too early, and three PHP 8.2 deprecation notices from the wizard are gone.
 
 1.5.4.1
 * Released: February 9, 2023
